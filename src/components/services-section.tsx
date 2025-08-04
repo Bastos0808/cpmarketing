@@ -2,6 +2,9 @@ import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/ca
 import { Button } from "@/components/ui/button"
 import { Briefcase, Radio, TrendingUp, Users, Youtube, Award, PlayCircle, Settings, Globe } from "lucide-react"
 import Image from "next/image"
+import { InteractiveCard } from "./interactive-card";
+import './interactive-card.css';
+
 
 const services = [
   {
@@ -58,17 +61,20 @@ export default function ServicesSection() {
 
             <div className="relative z-10 mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-6xl lg:grid-cols-3">
               {services.map((service, index) => (
-                <Card key={index} className="p-6 text-left transition-all duration-300 border border-primary/20 hover:border-primary bg-secondary/50 rounded-lg backdrop-blur-sm">
-                    <div className="flex justify-start mb-4">
-                        <div className="p-3 bg-white border-2 border-primary rounded-full inline-flex items-center justify-center">
-                           <div className="w-4 h-4 bg-primary transform rotate-45"></div>
-                        </div>
-                    </div>
-                  <CardHeader className="p-0">
-                    <CardTitle className="mb-2 text-xl font-bold">{service.title}</CardTitle>
-                    <CardDescription className="text-base text-muted-foreground">{service.description}</CardDescription>
-                  </CardHeader>
-                </Card>
+                <InteractiveCard key={index}>
+                  <Card className="card-interactive p-6 text-left transition-all duration-300 border border-primary/20 hover:border-primary bg-secondary/50 rounded-lg backdrop-blur-sm h-full flex flex-col">
+                      <div className="glow"></div>
+                      <div className="flex justify-start mb-4">
+                          <div className="p-3 bg-white border-2 border-primary rounded-full inline-flex items-center justify-center">
+                            <div className="w-4 h-4 bg-primary transform rotate-45"></div>
+                          </div>
+                      </div>
+                    <CardHeader className="p-0">
+                      <CardTitle className="mb-2 text-xl font-bold">{service.title}</CardTitle>
+                      <CardDescription className="text-base text-muted-foreground">{service.description}</CardDescription>
+                    </CardHeader>
+                  </Card>
+                </InteractiveCard>
               ))}
             </div>
         </div>
