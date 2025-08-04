@@ -1,22 +1,17 @@
 import Image from 'next/image';
-import { Instagram, Youtube, Mail, MapPin, Phone, Facebook, MessageCircle } from 'lucide-react';
+import { Instagram, Youtube, Mail, MapPin, Phone, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
 
 const socialLinks = [
   {
     name: 'Instagram',
-    icon: <Instagram className="h-6 w-6 text-[#E4405F]" />,
-    href: '#',
-  },
-  {
-    name: 'Facebook',
-    icon: <Facebook className="h-6 w-6 text-[#1877F2]" />,
-    href: '#',
+    icon: <Instagram className="h-6 w-6 text-primary-foreground" />,
+    href: 'https://www.instagram.com/cpmarketingbr',
   },
   {
     name: 'Youtube',
-    icon: <Youtube className="h-6 w-6 text-[#FF0000]" />,
-    href: '#',
+    icon: <Youtube className="h-6 w-6 text-primary-foreground" />,
+    href: 'https://www.youtube.com/@cpmarketingbr',
   },
 ];
 
@@ -41,12 +36,11 @@ export default function ContactSection() {
               </span>
             </div>
             <div className="flex items-center gap-4">
-                <a href="https://wa.me/556291528778" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                    <MessageCircle className="h-6 w-6 text-[#25D366]" />
-                    <span>+55 62 9152-8778</span>
+                <a href="https://wa.me/556291528778" target="_blank" rel="noopener noreferrer" className="p-2 bg-green-500 rounded-full hover:bg-green-600 transition-colors">
+                    <MessageCircle className="h-6 w-6 text-white" />
                 </a>
               {socialLinks.map((social) => (
-                <Link key={social.name} href={social.href} className="p-2 bg-primary/10 rounded-full hover:bg-primary/20 transition-colors">
+                <Link key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="p-2 bg-primary/80 rounded-full hover:bg-primary transition-colors">
                   {social.icon}
                 </Link>
               ))}
