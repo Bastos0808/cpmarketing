@@ -9,10 +9,9 @@ export default function ContactSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                    <Image src="/LOGO%20REDONDA.svg" alt="CP Marketing Logo" width={80} height={80} data-ai-hint="logo" />
+                <div className="flex flex-col gap-4">
+                    <Image src="/LOGO%20HORIZONTAL.svg" alt="CP Marketing Logo" width={200} height={60} data-ai-hint="logo" />
                     <div>
-                        <h3 className="text-2xl font-bold">CP Marketing</h3>
                         <p className="text-muted-foreground">Marketing Digital & Podcast</p>
                     </div>
                 </div>
