@@ -38,14 +38,15 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-background">
+    <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-background relative">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
            <p className="text-primary font-semibold uppercase tracking-widest">Nossos Serviços</p>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Serviços de Alto Impacto para Levar seu Negócio ao Próximo Nível</h2>
         </div>
+        
         <div className="relative">
-             <div className="absolute top-[-8rem] md:top-[-12rem] left-1/2 -translate-x-1/2 w-full max-w-lg h-auto opacity-70">
+            <div className="absolute top-[-8rem] md:top-[-12rem] left-1/2 -translate-x-1/2 w-full max-w-lg h-auto opacity-70">
                 <Image 
                     src="/FOTO M.png" 
                     alt="Woman pointing down" 
@@ -54,11 +55,12 @@ export default function ServicesSection() {
                     className="w-full h-full object-contain" 
                     data-ai-hint="woman pointing" />
             </div>
-            <div className="relative mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-6xl lg:grid-cols-3">
+
+            <div className="relative z-10 mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-6xl lg:grid-cols-3">
               {services.map((service, index) => (
                 <Card key={index} className="p-6 text-left transition-all duration-300 border border-primary/20 hover:border-primary bg-secondary/50 rounded-lg backdrop-blur-sm">
                     <div className="flex justify-start mb-4">
-                        <div className="p-3 bg-white border-2 border-primary rounded-full">
+                        <div className="p-3 bg-white border-2 border-primary rounded-full inline-flex items-center justify-center">
                            <div className="w-4 h-4 bg-primary transform rotate-45"></div>
                         </div>
                     </div>
@@ -70,6 +72,7 @@ export default function ServicesSection() {
               ))}
             </div>
         </div>
+
         <div className="text-center mt-16">
             <Button size="lg" className="uppercase">Entre em contato agora</Button>
         </div>
