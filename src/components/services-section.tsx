@@ -45,8 +45,8 @@ export default function ServicesSection() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Serviços de Alto Impacto para Levar seu Negócio ao Próximo Nível</h2>
         </div>
         
-        <div className="relative">
-            <div className="absolute top-[-8rem] md:top-[-12rem] left-1/2 -translate-x-1/2 w-full max-w-lg h-auto opacity-70">
+        <div className="relative pt-32 md:pt-48">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-auto">
                 <Image 
                     src="/FOTO M.png" 
                     alt="Woman pointing down" 
