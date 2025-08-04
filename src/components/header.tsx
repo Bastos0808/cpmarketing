@@ -61,7 +61,7 @@ export default function Header() {
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between p-4 border-b">
                      <Link href="/" className="flex items-center gap-2" onClick={closeMobileMenu}>
-                       <Image src="/LOGO%20REDONDA.svg" alt="CP Marketing Logo" width={40} height={40} data-ai-hint="logo" />
+                       <Image src="/LOGO%20HORIZONTAL.svg" alt="CP Marketing Logo" width={120} height={40} data-ai-hint="logo" />
                      </Link>
                      <Button variant="ghost" size="icon" onClick={closeMobileMenu}>
                         <X className="h-6 w-6" />

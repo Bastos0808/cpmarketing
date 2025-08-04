@@ -23,7 +23,7 @@ export default function HeroSection() {
           </div>
           <div className="relative flex items-center justify-center">
             <Image
-              src="/LOGO%20HORIZONTAL.svg"
+              src="/LOGO%20REDONDA.svg"
               alt="CP Marketing Logo"
               width={500}
               height={500}
