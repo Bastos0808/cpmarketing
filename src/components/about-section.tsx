@@ -7,8 +7,13 @@ export default function AboutSection() {
         <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
-                    <div className="relative w-full max-w-md mx-auto">
-                        <div className="absolute -top-4 -left-4 w-full h-full border-2 border-primary rounded-lg transform -rotate-3"></div>
+                    <div className="relative w-full max-w-md mx-auto flex items-center justify-center">
+                        <div className="absolute w-[120%] h-[100%]">
+                            <div className="absolute inset-0 border-2 border-primary/50 rounded-full animate-spin-slow"></div>
+                            <div className="absolute inset-4 border-2 border-primary/50 rounded-full animate-spin-slow-reverse"></div>
+                            <div className="absolute top-[10%] left-[5%] w-4 h-4 bg-primary transform rotate-45"></div>
+                             <div className="absolute bottom-[10%] right-[5%] w-4 h-4 bg-primary transform rotate-45"></div>
+                        </div>
                         <Image src="/FOTO CAIO.jpg" alt="Carlos C" width={400} height={450} className="rounded-lg relative z-10 object-cover" data-ai-hint="man portrait" />
                     </div>
                     <div className="space-y-6">
@@ -26,3 +31,17 @@ export default function AboutSection() {
         </section>
     )
 }
+
+// Add animation keyframes to globals.css
+// @keyframes spin-slow {
+//   from { transform: rotate(0deg); }
+//   to { transform: rotate(360deg); }
+// }
+// @keyframes spin-slow-reverse {
+//   from { transform: rotate(0deg); }
+//   to { transform: rotate(-360deg); }
+// }
+// animation: {
+//   'spin-slow': 'spin-slow 15s linear infinite',
+//   'spin-slow-reverse': 'spin-slow-reverse 15s linear infinite',
+// }
