@@ -65,7 +65,7 @@ export default function ContactSection() {
         </div>
         <div className="mt-16">
            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.583543161485!2d-49.28895068892189!3d-16.70243477810363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef1e056150247%3A0x6a4c6de59521364!2sR.%20C-237%2C%20239%20-%20Jardim%20Am%C3%A9rica%2C%20Goi%C3%A2nia%20-%20GO%2C%2074290-140!5e0!3m2!1sen!2sbr!4v1722449652565!5m2!1sen!2sbr" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.583543161485!2d-49.28895068892189!3d-16.70243477810363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef1e056150247%3A0x6a4c6de59521364!2sR.%20C-237%2C%20239%20-%20Jardim%20Am%C3%A9rica%2C%20Goi%C3%A2nia%20-%20GO%2C%2074290-140!5e0!3m2!1spt-BR!2sbr!4v1722450511295!5m2!1spt-BR!2sbr" 
                 width="100%" 
                 height="450" 
                 style={{border:0}} 
