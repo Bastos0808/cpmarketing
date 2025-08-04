@@ -48,7 +48,7 @@ export default function ServicesSection() {
         <div className="relative pt-48 md:pt-96">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-xs sm:max-w-sm md:max-w-lg h-auto">
                 <Image 
-                    src="/FOTO M.png" 
+                    src="/FOTO M.png?v=2" 
                     alt="Woman pointing down" 
                     width={500} 
                     height={500} 
