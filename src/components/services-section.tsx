@@ -44,23 +44,31 @@ export default function ServicesSection() {
            <p className="text-primary font-semibold uppercase tracking-widest">Nossos Serviços</p>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Serviços de Alto Impacto para Levar seu Negócio ao Próximo Nível</h2>
         </div>
-         <div className="flex justify-center mb-12">
-            <Image src="/FOTO M.png" alt="Woman pointing down" width={300} height={300} className="w-48 h-48 md:w-64 md:h-64 object-contain" data-ai-hint="woman pointing" />
-        </div>
-        <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-6xl lg:grid-cols-3">
-          {services.map((service, index) => (
-            <Card key={index} className="p-6 text-left transition-all duration-300 border border-primary/20 hover:border-primary bg-secondary/50 rounded-lg">
-                <div className="flex justify-start mb-4">
-                    <div className="p-3 bg-primary/10 border-2 border-primary rounded-full">
-                        {service.icon}
+        <div className="relative">
+             <div className="absolute top-[-8rem] md:top-[-12rem] left-1/2 -translate-x-1/2 w-full max-w-lg h-auto -z-10 opacity-70">
+                <Image 
+                    src="/FOTO M.png" 
+                    alt="Woman pointing down" 
+                    width={500} 
+                    height={500} 
+                    className="w-full h-full object-contain" 
+                    data-ai-hint="woman pointing" />
+            </div>
+            <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-6xl lg:grid-cols-3">
+              {services.map((service, index) => (
+                <Card key={index} className="p-6 text-left transition-all duration-300 border border-primary/20 hover:border-primary bg-secondary/50 rounded-lg backdrop-blur-sm">
+                    <div className="flex justify-start mb-4">
+                        <div className="p-3 bg-white border-2 border-primary rounded-full">
+                           <div className="w-4 h-4 bg-primary transform rotate-45"></div>
+                        </div>
                     </div>
-                </div>
-              <CardHeader className="p-0">
-                <CardTitle className="mb-2 text-xl font-bold">{service.title}</CardTitle>
-                <CardDescription className="text-base text-muted-foreground">{service.description}</CardDescription>
-              </CardHeader>
-            </Card>
-          ))}
+                  <CardHeader className="p-0">
+                    <CardTitle className="mb-2 text-xl font-bold">{service.title}</CardTitle>
+                    <CardDescription className="text-base text-muted-foreground">{service.description}</CardDescription>
+                  </CardHeader>
+                </Card>
+              ))}
+            </div>
         </div>
         <div className="text-center mt-16">
             <Button size="lg" className="uppercase">Entre em contato agora</Button>
