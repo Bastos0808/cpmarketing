@@ -1,6 +1,4 @@
 import Image from "next/image"
-import Link from "next/link"
-import { Button } from "./ui/button"
 
 export default function AboutSection() {
     return (
@@ -31,17 +29,3 @@ export default function AboutSection() {
         </section>
     )
 }
-
-// Add animation keyframes to globals.css
-// @keyframes spin-slow {
-//   from { transform: rotate(0deg); }
-//   to { transform: rotate(360deg); }
-// }
-// @keyframes spin-slow-reverse {
-//   from { transform: rotate(0deg); }
-//   to { transform: rotate(-360deg); }
-// }
-// animation: {
-//   'spin-slow': 'spin-slow 15s linear infinite',
-//   'spin-slow-reverse': 'spin-slow-reverse 15s linear infinite',
-// }
