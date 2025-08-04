@@ -9,7 +9,7 @@ export default function AboutSection() {
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="relative w-full max-w-md mx-auto">
                         <div className="absolute -top-4 -left-4 w-full h-full border-2 border-primary rounded-lg transform -rotate-3"></div>
-                        <Image src="https://placehold.co/400x450" alt="Carlos C" width={400} height={450} className="rounded-lg relative z-10 object-cover" data-ai-hint="man portrait" />
+                        <Image src="/FOTO CAIO.jpg" alt="Carlos C" width={400} height={450} className="rounded-lg relative z-10 object-cover" data-ai-hint="man portrait" />
                     </div>
                     <div className="space-y-6">
                         <p className="text-primary font-semibold uppercase tracking-widest">SOBRE NÓS</p>
