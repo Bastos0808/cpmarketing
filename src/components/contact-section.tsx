@@ -5,13 +5,15 @@ import Link from 'next/link';
 const socialLinks = [
   {
     name: 'Instagram',
-    icon: <Instagram className="h-6 w-6 text-primary-foreground" />,
+    icon: <Instagram className="h-6 w-6 text-white" />,
     href: 'https://www.instagram.com/cpmarketingbr',
+    className: "bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600"
   },
   {
     name: 'Youtube',
-    icon: <Youtube className="h-6 w-6 text-primary-foreground" />,
+    icon: <Youtube className="h-6 w-6 text-white" />,
     href: 'https://www.youtube.com/@cpmarketingbr',
+    className: "bg-red-600 hover:bg-red-700"
   },
 ];
 
@@ -40,7 +42,7 @@ export default function ContactSection() {
                     <MessageCircle className="h-6 w-6 text-white" />
                 </a>
               {socialLinks.map((social) => (
-                <Link key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="p-2 bg-primary/80 rounded-full hover:bg-primary transition-colors">
+                <Link key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className={`p-2 rounded-full transition-colors ${social.className}`}>
                   {social.icon}
                 </Link>
               ))}
