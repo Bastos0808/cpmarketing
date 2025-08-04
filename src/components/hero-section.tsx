@@ -1,12 +1,12 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import AudioVisualizerBackground from "./audio-visualizer-background"
+import WarpSpeedBackground from "./warp-speed-background"
 
 export default function HeroSection() {
   return (
     <section id="hero" className="w-full relative overflow-hidden h-screen flex items-center justify-center">
-        <AudioVisualizerBackground />
+        <WarpSpeedBackground />
         <div className="container mx-auto px-4 md:px-6 z-10">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-24 items-center">
             <div className="flex flex-col justify-center space-y-6 text-center lg:text-left">
