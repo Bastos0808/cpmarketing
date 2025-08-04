@@ -14,7 +14,6 @@
     transform: translate3d(0, 0, 0.01px);
 }
 
-.card-interactive::before,
 .card-interactive > .glow {
     content: "";
     position: absolute;
@@ -25,24 +24,10 @@
 }
 
 .card-interactive:not(:hover):not(.animating) {
-    &::before,
     & > .glow {
         opacity: 0;
         transition: opacity 0.75s ease-in-out;
     }
-}
-
-.card-interactive::before {
-    /* solid color border */
-    border: 1px solid transparent;
-    background:
-        linear-gradient(var(--card-bg) 0 100%) padding-box,
-        linear-gradient(hsl(var(--glow-color)) 0 100%) border-box;
-    opacity: calc((var(--pointer-d) - var(--color-sens)) / (100 - var(--color-sens)));
-    mask-image: 
-        conic-gradient( 
-            from var(--pointer-°) at center, black 25%, transparent 40%, transparent 60%, black 75%
-        );
 }
 
 .card-interactive > .glow {
