@@ -1,5 +1,3 @@
-import { Button } from "./ui/button"
-import { PlayCircle } from "lucide-react"
 
 export default function VideoSection() {
     return (
@@ -10,10 +8,8 @@ export default function VideoSection() {
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Conheça-nos</h2>
                 </div>
                 <div className="mt-12 mx-auto max-w-4xl">
-                    <div className="aspect-video bg-secondary rounded-lg flex items-center justify-center">
-                        <Button variant="ghost" size="icon" className="w-24 h-24">
-                            <PlayCircle className="w-20 h-20 text-primary" />
-                        </Button>
+                    <div className="aspect-video bg-secondary rounded-lg">
+                        {/* Video player will be here */}
                     </div>
                 </div>
             </div>
