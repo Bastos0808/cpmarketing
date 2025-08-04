@@ -4,19 +4,19 @@ import { Button } from "./ui/button";
 
 const methods = [
     {
-        step: "01",
+        step: "(001)",
         title: "Plano de Marketing",
-        description: "Na análise, mergulhamos nos dados para traçar o caminho do sucesso.",
+        description: "Estratégias, ações e objetivos são componentes importantes de um plano de marketing.",
     },
     {
-        step: "02",
-        title: "Execução do Mesmo",
-        description: "A ação é o nosso forte.",
+        step: "(002)",
+        title: "Execução do Trabalho",
+        description: "Implementação da estratégia.",
     },
     {
-        step: "03",
+        step: "(003)",
         title: "Crescimento & Escala",
-        description: "Expandimos suas fronteiras, garantindo um crescimento sustentável e impactante.",
+        description: "Escalada e Expansão: Aumentando a produção e ampliando a oferta de serviços e produtos.",
     }
 ]
 
@@ -28,9 +28,9 @@ export default function MethodSection() {
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-left">Conheça nosso método</h2>
                     <Image src="/LOGO%20REDONDA.svg" alt="CP Marketing Logo" width={80} height={80} data-ai-hint="logo" />
                  </div>
-                 <div className="space-y-8">
+                 <div className="space-y-4">
                      {methods.map((method) => (
-                        <div key={method.step} className="border-b border-border pb-8">
+                        <div key={method.step} className="border border-border rounded-lg p-6">
                             <div className="grid md:grid-cols-3 gap-8 items-center">
                                 <div className="flex items-center gap-4">
                                      <h3 className="text-xl font-semibold flex items-center gap-2">
@@ -39,7 +39,7 @@ export default function MethodSection() {
                                 </div>
                                 <div className="md:col-span-2 flex justify-between items-center">
                                      <p className="text-muted-foreground">{method.description}</p>
-                                     <span className="text-primary font-bold text-2xl">{method.step}</span>
+                                     <span className="text-muted-foreground font-mono text-lg">{method.step}</span>
                                 </div>
                             </div>
                         </div>
