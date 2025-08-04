@@ -13,11 +13,13 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <HeroSection />
-        <VideoSection />
-        <AboutSection />
-        <MethodSection />
-        <ServicesSection />
-        <ContactSection />
+        <div id="content-after-hero">
+            <VideoSection />
+            <AboutSection />
+            <MethodSection />
+            <ServicesSection />
+            <ContactSection />
+        </div>
       </main>
       <Footer />
     </div>
