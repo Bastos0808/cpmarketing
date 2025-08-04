@@ -11,18 +11,15 @@ export default function AboutSection() {
                         <div className="absolute -top-4 -left-4 w-full h-full border-2 border-primary rounded-lg transform -rotate-3"></div>
                         <Image src="https://placehold.co/400x450" alt="Carlos C" width={400} height={450} className="rounded-lg relative z-10 object-cover" data-ai-hint="man portrait" />
                     </div>
-                    <div className="space-y-4">
-                        <p className="text-primary font-semibold uppercase tracking-widest">Sobre Nós</p>
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Sua Agência de Marketing Digital de Confiança</h2>
+                    <div className="space-y-6">
+                        <p className="text-primary font-semibold uppercase tracking-widest">SOBRE NÓS</p>
+                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">A CP Marketing: Sua Agência Completa com Estúdio de Podcast</h2>
                         <p className="text-muted-foreground">
-                            Na vanguarda do marketing digital, a CP Marketing se destaca por sua abordagem inovadora, integrando estratégias de conteúdo dinâmicas para fortalecer a presença de marca e o engajamento do cliente. Nossa missão é clara: elevar sua comunicação a um novo patamar de excelência.
+                            Na CP Marketing, oferecemos soluções de marketing completas e integradas para sua marca. Além dos nossos serviços de marketing digital, design e consultoria estratégica, contamos com um estúdio de podcast totalmente equipado. Transforme suas ideias em conteúdo de alta qualidade e alcance resultados excepcionais com nossa expertise e tecnologia de ponta.
                         </p>
-                         <p className="text-muted-foreground">
+                         <p className="text-primary font-bold text-xl">
                            Vamos elevar sua comunicação para o próximo nível!
                         </p>
-                        <Button asChild>
-                            <Link href="#">Saiba mais</Link>
-                        </Button>
                     </div>
                 </div>
             </div>
