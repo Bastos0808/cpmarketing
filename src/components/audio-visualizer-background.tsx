@@ -59,7 +59,7 @@ const AudioVisualizerBackground = () => {
             lineStraightness: 2.53,
             idleWaveHeight: 0.01,
             transitionSmoothness: 0.03,
-            colorPreset: "Warm",
+            colorPreset: "Cool",
             bgColorDown: [40, 20, 10],
             bgColorUp: [20, 10, 5],
             color1In: [255, 200, 0],
