@@ -7,14 +7,14 @@ export default function AboutSection() {
         <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
-                    <div className="relative flex items-center justify-center max-w-md mx-auto">
+                    <div className="relative flex items-center justify-center max-w-sm mx-auto">
                         <div className="absolute w-full h-full">
                             <div className="absolute inset-0 border-2 border-primary/50 rounded-full animate-spin-slow"></div>
                             <div className="absolute inset-[8%] border-2 border-primary/50 rounded-full animate-spin-slow-reverse"></div>
                             <div className="absolute top-[15%] right-[5%] w-2 h-2 bg-primary transform rotate-45"></div>
                             <div className="absolute bottom-[15%] left-[5%] w-2 h-2 bg-primary transform rotate-45"></div>
                         </div>
-                        <Image src="/FOTO CAIO.jpg" alt="Carlos C" width={400} height={450} className="rounded-lg relative z-10 object-cover" data-ai-hint="man portrait" />
+                        <Image src="/FOTO CAIO.jpg" alt="Carlos C" width={350} height={400} className="rounded-lg relative z-10 object-cover" data-ai-hint="man portrait" />
                     </div>
                     <div className="space-y-6">
                         <p className="text-primary font-semibold uppercase tracking-widest">SOBRE NÓS</p>
