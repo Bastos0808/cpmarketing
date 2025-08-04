@@ -44,12 +44,12 @@ export default function ServicesSection() {
     <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-background relative animate-fade-in animation-delay-300 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-           <p className="text-primary font-semibold uppercase tracking-widest">Nossos Serviços</p>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Serviços de Alto Impacto para Levar seu Negócio ao Próximo Nível</h2>
+           <p className="text-primary font-semibold uppercase tracking-widest text-sm">Nossos Serviços</p>
+          <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl">Serviços de Alto Impacto para Levar seu Negócio ao Próximo Nível</h2>
         </div>
         
-        <div className="relative pt-48 md:pt-96">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-xs sm:max-w-sm md:max-w-lg h-auto">
+        <div className="relative pt-48 md:pt-64 lg:pt-96">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[200px] sm:max-w-xs md:max-w-sm lg:max-w-lg h-auto">
                 <Image 
                     src="/FOTO M.png?v=2" 
                     alt="Woman pointing down" 
@@ -59,10 +59,10 @@ export default function ServicesSection() {
                     data-ai-hint="woman pointing" />
             </div>
 
-            <div className="relative z-10 mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-6xl lg:grid-cols-3">
+            <div className="relative z-10 mx-auto grid items-start gap-8 sm:grid-cols-2 lg:max-w-6xl lg:grid-cols-3">
               {services.map((service, index) => (
                 <InteractiveCard key={index}>
-                  <Card className="card-interactive p-6 text-left transition-all duration-300 border border-primary/20 hover:border-primary bg-secondary/50 rounded-lg backdrop-blur-sm h-full flex flex-col">
+                  <Card className="card-interactive p-4 md:p-6 text-left transition-all duration-300 border border-primary/20 hover:border-primary bg-secondary/50 rounded-lg backdrop-blur-sm h-full flex flex-col">
                       <div className="glow"></div>
                       <div className="flex justify-start mb-4">
                           <div className="p-3 bg-white border-2 border-primary rounded-full inline-flex items-center justify-center">
@@ -70,8 +70,8 @@ export default function ServicesSection() {
                           </div>
                       </div>
                     <CardHeader className="p-0">
-                      <CardTitle className="mb-2 text-xl font-bold">{service.title}</CardTitle>
-                      <CardDescription className="text-base text-muted-foreground">{service.description}</CardDescription>
+                      <CardTitle className="mb-2 text-lg md:text-xl font-bold">{service.title}</CardTitle>
+                      <CardDescription className="text-sm md:text-base text-muted-foreground">{service.description}</CardDescription>
                     </CardHeader>
                   </Card>
                 </InteractiveCard>
@@ -79,7 +79,7 @@ export default function ServicesSection() {
             </div>
         </div>
 
-        <div className="text-center mt-16">
+        <div className="text-center mt-12 md:mt-16">
             <Button size="lg" className="uppercase">Entre em contato agora</Button>
         </div>
       </div>

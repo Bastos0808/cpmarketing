@@ -14,7 +14,7 @@ export default function AboutSection() {
         <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
-                    <div className="relative flex items-center justify-center max-w-[350px] mx-auto">
+                    <div className="relative flex items-center justify-center max-w-[300px] mx-auto">
                         <div className="absolute w-full h-full hidden md:block">
                             <div className="absolute inset-0 border-2 border-primary/50 rounded-full animate-spin-slow"></div>
                             <div className="absolute inset-[8%] border-2 border-primary/50 rounded-full animate-spin-slow-reverse"></div>
@@ -30,21 +30,21 @@ export default function AboutSection() {
                         >
                             <CarouselContent>
                                 <CarouselItem>
-                                    <Image src="/FOTO CAIO.png?v=3" alt="Carlos C" width={350} height={600} className="rounded-lg relative z-10 object-cover aspect-[350/600]" data-ai-hint="man portrait" />
+                                    <Image src="/FOTO CAIO.png?v=3" alt="Carlos C" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="man portrait" />
                                 </CarouselItem>
                                 <CarouselItem>
-                                    <Image src="https://placehold.co/350x600.png" alt="Podcast Studio" width={350} height={600} className="rounded-lg relative z-10 object-cover aspect-[350/600]" data-ai-hint="podcast studio" />
+                                    <Image src="https://placehold.co/300x500.png" alt="Podcast Studio" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="podcast studio" />
                                 </CarouselItem>
                             </CarouselContent>
                         </Carousel>
                     </div>
-                    <div className="space-y-6 text-center md:text-left">
-                        <p className="text-primary font-semibold uppercase tracking-widest">SOBRE NÓS</p>
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-3xl">A CP Marketing: Sua Agência Completa com Estúdio de Podcast</h2>
-                        <p className="text-muted-foreground md:text-base">
+                    <div className="space-y-4 text-center md:text-left">
+                        <p className="text-primary font-semibold uppercase tracking-widest text-sm">SOBRE NÓS</p>
+                        <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">A CP Marketing: Sua Agência Completa com Estúdio de Podcast</h2>
+                        <p className="text-muted-foreground text-sm md:text-base">
                             Na CP Marketing, oferecemos soluções de marketing completas e integradas para sua marca. Além dos nossos serviços de marketing digital, design e consultoria estratégica, contamos com um estúdio de podcast totalmente equipado. Transforme suas ideias em conteúdo de alta qualidade e alcance resultados excepcionais com nossa expertise e tecnologia de ponta.
                         </p>
-                         <p className="text-primary font-bold text-lg md:text-xl">
+                         <p className="text-primary font-bold text-base md:text-lg">
                            Vamos elevar sua comunicação para o próximo nível!
                         </p>
                     </div>

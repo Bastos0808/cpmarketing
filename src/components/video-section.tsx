@@ -5,11 +5,19 @@ export default function VideoSection() {
              <div className="absolute inset-0 bg-grid-orange-900/10 [mask-image:linear-gradient(to_bottom,white_5%,transparent_50%)]"></div>
             <div className="container mx-auto px-4 md:px-6 relative">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Conheça-nos</h2>
+                    <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl">Conheça-nos</h2>
                 </div>
-                <div className="mt-12 mx-auto max-w-4xl">
-                    <div className="aspect-video bg-secondary rounded-lg">
-                        {/* Video player will be here */}
+                <div className="mt-8 md:mt-12 mx-auto max-w-4xl">
+                    <div className="aspect-video bg-secondary rounded-lg overflow-hidden">
+                        <iframe 
+                            width="100%" 
+                            height="100%" 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            title="YouTube video player" 
+                            frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowFullScreen>
+                        </iframe>
                     </div>
                 </div>
             </div>
