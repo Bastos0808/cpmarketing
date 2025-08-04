@@ -14,7 +14,7 @@ export default function AboutSection() {
         <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
-                    <div className="relative flex items-center justify-center max-w-md mx-auto">
+                    <div className="relative flex items-center justify-center max-w-lg mx-auto">
                         <div className="absolute w-full h-full">
                             <div className="absolute inset-0 border-2 border-primary/50 rounded-full animate-spin-slow"></div>
                             <div className="absolute inset-[8%] border-2 border-primary/50 rounded-full animate-spin-slow-reverse"></div>
@@ -23,17 +23,17 @@ export default function AboutSection() {
                         </div>
                         <Carousel
                             plugins={[plugin.current]}
-                            className="w-full max-w-sm"
+                            className="w-full max-w-md"
                             opts={{
                                 loop: true,
                             }}
                         >
                             <CarouselContent>
                                 <CarouselItem>
-                                    <Image src="/FOTO CAIO.jpg" alt="Carlos C" width={400} height={450} className="rounded-lg relative z-10 object-cover aspect-[400/450]" data-ai-hint="man portrait" />
+                                    <Image src="/FOTO CAIO.jpg" alt="Carlos C" width={450} height={506} className="rounded-lg relative z-10 object-cover aspect-[400/450]" data-ai-hint="man portrait" />
                                 </CarouselItem>
                                 <CarouselItem>
-                                    <Image src="https://placehold.co/400x450.png" alt="Podcast Studio" width={400} height={450} className="rounded-lg relative z-10 object-cover aspect-[400/450]" data-ai-hint="podcast studio" />
+                                    <Image src="https://placehold.co/450x506.png" alt="Podcast Studio" width={450} height={506} className="rounded-lg relative z-10 object-cover aspect-[400/450]" data-ai-hint="podcast studio" />
                                 </CarouselItem>
                             </CarouselContent>
                         </Carousel>
