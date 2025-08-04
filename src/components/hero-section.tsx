@@ -23,7 +23,7 @@ export default function HeroSection() {
           </div>
           <div className="relative flex items-center justify-center">
             <Image
-              src="https://placehold.co/500x500"
+              src="/logo-redonda.png"
               alt="CP Marketing Logo"
               width={500}
               height={500}

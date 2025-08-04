@@ -34,7 +34,7 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="https://placehold.co/40x40" alt="CP Marketing Logo" width={40} height={40} data-ai-hint="logo" />
+            <Image src="/logo-redonda.png" alt="CP Marketing Logo" width={40} height={40} data-ai-hint="logo" />
             <span className="sr-only">CP Marketing</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8">
@@ -61,7 +61,7 @@ export default function Header() {
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between p-4 border-b">
                      <Link href="/" className="flex items-center gap-2" onClick={closeMobileMenu}>
-                       <Image src="https://placehold.co/40x40" alt="CP Marketing Logo" width={40} height={40} data-ai-hint="logo" />
+                       <Image src="/logo-redonda.png" alt="CP Marketing Logo" width={40} height={40} data-ai-hint="logo" />
                      </Link>
                      <Button variant="ghost" size="icon" onClick={closeMobileMenu}>
                         <X className="h-6 w-6" />

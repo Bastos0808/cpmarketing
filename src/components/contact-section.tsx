@@ -10,7 +10,7 @@ export default function ContactSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                    <Image src="https://placehold.co/80x80" alt="CP Marketing Logo" width={80} height={80} data-ai-hint="logo" />
+                    <Image src="/logo-redonda.png" alt="CP Marketing Logo" width={80} height={80} data-ai-hint="logo" />
                     <div>
                         <h3 className="text-2xl font-bold">CP Marketing</h3>
                         <p className="text-muted-foreground">Marketing Digital & Podcast</p>
