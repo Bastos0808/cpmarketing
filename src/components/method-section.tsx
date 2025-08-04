@@ -25,8 +25,7 @@ export default function MethodSection() {
         <section id="method" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
             <div className="container mx-auto px-4 md:px-6">
                  <div className="flex flex-row justify-between items-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-left">Conheça nosso método</h2>
-                    <Image src="/LOGO%20REDONDA.svg" alt="CP Marketing Logo" width={80} height={80} data-ai-hint="logo" />
+                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-left bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">Conheça nosso método</h2>
                  </div>
                  <div className="space-y-4">
                      {methods.map((method) => (
