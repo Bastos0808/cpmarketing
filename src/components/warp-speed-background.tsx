@@ -16,7 +16,7 @@ const WarpSpeedBackground = () => {
         let numStars = 1900;
         const radius = '0.' + Math.floor(Math.random() * 9) + 1;
         let focalLength = canvas.width * 2;
-        let warp = 1; // Start with warp effect enabled
+        let warp = 0; // Set to 0 for the initial moving stars effect without trails
         let centerX: number, centerY: number;
 
         let stars: { x: number, y: number, z: number, o: string }[] = [];
