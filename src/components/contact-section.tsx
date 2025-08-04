@@ -4,11 +4,6 @@ import Link from 'next/link';
 
 const socialLinks = [
   {
-    name: 'Whatsapp',
-    icon: <MessageCircle className="h-6 w-6 text-[#25D366]" />,
-    href: '#',
-  },
-  {
     name: 'Instagram',
     icon: <Instagram className="h-6 w-6 text-[#E4405F]" />,
     href: '#',
@@ -45,7 +40,11 @@ export default function ContactSection() {
                 Rua 239 Quadra 532 Lote 19 - Jardim América - Goiânia - Próximo ao Ginasio e ao lado do Condomínio Muy Bueno
               </span>
             </div>
-            <div className="flex gap-4">
+            <div className="flex items-center gap-4">
+                <a href="https://wa.me/556291528778" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                    <MessageCircle className="h-6 w-6 text-[#25D366]" />
+                    <span>+55 62 9152-8778</span>
+                </a>
               {socialLinks.map((social) => (
                 <Link key={social.name} href={social.href} className="p-2 bg-primary/10 rounded-full hover:bg-primary/20 transition-colors">
                   {social.icon}
