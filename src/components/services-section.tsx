@@ -29,11 +29,6 @@ const services = [
     description: "Gerenciamos seu canal no YouTube, desde a criação de conteúdo até a otimização para alcançar mais visualizações.",
     icon: <Youtube className="h-6 w-6 text-primary" />
   },
-  {
-    title: "Treinamentos e Mentoria",
-    description: "Oferecemos treinamentos e mentorias personalizadas para capacitar sua equipe e alavancar seus resultados.",
-    icon: <Award className="h-6 w-6 text-primary" />
-  },
 ]
 
 export default function ServicesSection() {
