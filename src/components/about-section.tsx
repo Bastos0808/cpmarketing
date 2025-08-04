@@ -30,7 +30,7 @@ export default function AboutSection() {
                         >
                             <CarouselContent>
                                 <CarouselItem>
-                                    <Image src="/FOTO CAIO.jpg?v=2" alt="Carlos C" width={350} height={600} className="rounded-lg relative z-10 object-cover aspect-[350/600]" data-ai-hint="man portrait" />
+                                    <Image src="/FOTO CAIO.png?v=3" alt="Carlos C" width={350} height={600} className="rounded-lg relative z-10 object-cover aspect-[350/600]" data-ai-hint="man portrait" />
                                 </CarouselItem>
                                 <CarouselItem>
                                     <Image src="https://placehold.co/350x600.png" alt="Podcast Studio" width={350} height={600} className="rounded-lg relative z-10 object-cover aspect-[350/600]" data-ai-hint="podcast studio" />
@@ -40,11 +40,11 @@ export default function AboutSection() {
                     </div>
                     <div className="space-y-6 text-center md:text-left">
                         <p className="text-primary font-semibold uppercase tracking-widest">SOBRE NÓS</p>
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">A CP Marketing: Sua Agência Completa com Estúdio de Podcast</h2>
-                        <p className="text-muted-foreground">
+                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-3xl">A CP Marketing: Sua Agência Completa com Estúdio de Podcast</h2>
+                        <p className="text-muted-foreground md:text-base">
                             Na CP Marketing, oferecemos soluções de marketing completas e integradas para sua marca. Além dos nossos serviços de marketing digital, design e consultoria estratégica, contamos com um estúdio de podcast totalmente equipado. Transforme suas ideias em conteúdo de alta qualidade e alcance resultados excepcionais com nossa expertise e tecnologia de ponta.
                         </p>
-                         <p className="text-primary font-bold text-xl">
+                         <p className="text-primary font-bold text-lg md:text-xl">
                            Vamos elevar sua comunicação para o próximo nível!
                         </p>
                     </div>
