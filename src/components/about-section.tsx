@@ -1,6 +1,15 @@
+"use client"
+
+import React from "react"
 import Image from "next/image"
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
 
 export default function AboutSection() {
+    const plugin = React.useRef(
+        Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true })
+    )
+
     return (
         <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-secondary animate-fade-in animation-delay-300">
             <div className="container mx-auto px-4 md:px-6">
@@ -12,7 +21,22 @@ export default function AboutSection() {
                             <div className="absolute top-[15%] right-[5%] w-2 h-2 bg-primary transform rotate-45"></div>
                             <div className="absolute bottom-[15%] left-[5%] w-2 h-2 bg-primary transform rotate-45"></div>
                         </div>
-                        <Image src="/FOTO CAIO.jpg" alt="Carlos C" width={350} height={400} className="rounded-lg relative z-10 object-cover" data-ai-hint="man portrait" />
+                        <Carousel
+                            plugins={[plugin.current]}
+                            className="w-full max-w-xs"
+                            opts={{
+                                loop: true,
+                            }}
+                        >
+                            <CarouselContent>
+                                <CarouselItem>
+                                    <Image src="/FOTO CAIO.jpg" alt="Carlos C" width={350} height={400} className="rounded-lg relative z-10 object-cover aspect-[350/400]" data-ai-hint="man portrait" />
+                                </CarouselItem>
+                                <CarouselItem>
+                                    <Image src="https://placehold.co/350x400.png" alt="Podcast Studio" width={350} height={400} className="rounded-lg relative z-10 object-cover" data-ai-hint="podcast studio" />
+                                </CarouselItem>
+                            </CarouselContent>
+                        </Carousel>
                     </div>
                     <div className="space-y-6">
                         <p className="text-primary font-semibold uppercase tracking-widest">SOBRE NÓS</p>
