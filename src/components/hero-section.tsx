@@ -30,11 +30,11 @@ export default function HeroSection() {
               className="z-10 w-[300px] h-[300px] md:w-[500px] md:h-[500px]"
               data-ai-hint="logo"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-orange-600/20 to-transparent blur-3xl rounded-full"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-orange-600/20 to-transparent blur-3xl rounded-full animate-spin-slow"></div>
           </div>
         </div>
       </div>
-      <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-orange-600/10 to-transparent rounded-full pointer-events-none"></div>
+      <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-orange-600/10 to-transparent rounded-full pointer-events-none animate-spin-slow"></div>
     </section>
   )
 }
