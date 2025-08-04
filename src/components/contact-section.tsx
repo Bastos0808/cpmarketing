@@ -42,7 +42,7 @@ export default function ContactSection() {
             <div className="flex items-start gap-4">
               <MapPin className="h-5 w-5 text-primary mt-1" />
               <span className="text-muted-foreground">
-                Rua C-239 Quadra 532 Lote 19 - Jardim América - Goiânia - Próximo ao Ginasio e ao lado do Condomínio Muy Bueno
+                Rua 239 Quadra 532 Lote 19 - Jardim América - Goiânia - Próximo ao Ginasio e ao lado do Condomínio Muy Bueno
               </span>
             </div>
             <div className="flex gap-4">
