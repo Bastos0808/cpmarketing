@@ -45,7 +45,7 @@ export default function ServicesSection() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Serviços de Alto Impacto para Levar seu Negócio ao Próximo Nível</h2>
         </div>
         <div className="relative">
-             <div className="absolute top-[-8rem] md:top-[-12rem] left-1/2 -translate-x-1/2 w-full max-w-lg h-auto -z-10 opacity-70">
+             <div className="absolute top-[-8rem] md:top-[-12rem] left-1/2 -translate-x-1/2 w-full max-w-lg h-auto opacity-70">
                 <Image 
                     src="/FOTO M.png" 
                     alt="Woman pointing down" 
@@ -54,7 +54,7 @@ export default function ServicesSection() {
                     className="w-full h-full object-contain" 
                     data-ai-hint="woman pointing" />
             </div>
-            <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-6xl lg:grid-cols-3">
+            <div className="relative mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-6xl lg:grid-cols-3">
               {services.map((service, index) => (
                 <Card key={index} className="p-6 text-left transition-all duration-300 border border-primary/20 hover:border-primary bg-secondary/50 rounded-lg backdrop-blur-sm">
                     <div className="flex justify-start mb-4">
