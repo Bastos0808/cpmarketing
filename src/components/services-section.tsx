@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { PlusCircle } from "lucide-react"
+import Image from "next/image"
 
 const services = [
   {
@@ -38,7 +39,7 @@ export default function ServicesSection() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Serviços de Alto Impacto para Levar seu Negócio ao Próximo Nível</h2>
         </div>
          <div className="flex justify-center mb-12">
-            <img src="https://placehold.co/300x300" alt="Woman pointing down" className="w-48 h-48 md:w-64 md:h-64 object-cover" data-ai-hint="woman pointing" />
+            <Image src="https://placehold.co/300x300" alt="Woman pointing down" width={300} height={300} className="w-48 h-48 md:w-64 md:h-64 object-cover" data-ai-hint="woman pointing" />
         </div>
         <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-6xl lg:grid-cols-3">
           {services.map((service, index) => (
