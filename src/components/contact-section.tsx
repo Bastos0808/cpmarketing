@@ -30,15 +30,9 @@ export default function ContactSection() {
                 </div>
 
                 <div className="flex gap-4">
-                    <Button variant="outline" size="icon" asChild>
-                        <Link href="#"><Instagram className="h-5 w-5" /></Link>
-                    </Button>
-                    <Button variant="outline" size="icon" asChild>
-                        <Link href="#"><Youtube className="h-5 w-5" /></Link>
-                    </Button>
-                     <Button variant="outline" size="icon" asChild>
-                        <Link href="#"><Mail className="h-5 w-5" /></Link>
-                    </Button>
+                    <Link href="#"><Instagram className="h-6 w-6 text-primary hover:opacity-80 transition-opacity" /></Link>
+                    <Link href="#"><Youtube className="h-6 w-6 text-primary hover:opacity-80 transition-opacity" /></Link>
+                    <Link href="#"><Mail className="h-6 w-6 text-primary hover:opacity-80 transition-opacity" /></Link>
                 </div>
             </div>
             <div>

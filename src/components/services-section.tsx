@@ -1,32 +1,38 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { PlusCircle } from "lucide-react"
+import { Briefcase, Radio, TrendingUp, Users, Youtube, Award, PlayCircle } from "lucide-react"
 import Image from "next/image"
 
 const services = [
   {
     title: "Branding em Mídias Sociais",
     description: "Criamos e gerenciamos sua marca nas redes sociais, aumentando o reconhecimento e o engajamento do seu público-alvo.",
+    icon: <Briefcase className="h-6 w-6 text-primary" />
   },
   {
     title: "Edição de Podcast",
     description: "Produção e edição profissional de podcasts para garantir a melhor qualidade de áudio e conteúdo para seus ouvintes.",
+    icon: <Radio className="h-6 w-6 text-primary" />
   },
   {
     title: "Gestão de Tráfego",
     description: "Planejamos e executamos campanhas de tráfego pago para atrair mais clientes e aumentar suas vendas.",
+    icon: <TrendingUp className="h-6 w-6 text-primary" />
   },
   {
     title: "Criação/Análise de Persona",
     description: "Desenvolvemos a persona ideal para o seu negócio, garantindo que suas estratégias de marketing sejam eficazes.",
+    icon: <Users className="h-6 w-6 text-primary" />
   },
   {
     title: "Gestão de Canal no YouTube",
     description: "Gerenciamos seu canal no YouTube, desde a criação de conteúdo até a otimização para alcançar mais visualizações.",
+    icon: <Youtube className="h-6 w-6 text-primary" />
   },
   {
     title: "Treinamentos e Mentoria",
     description: "Oferecemos treinamentos e mentorias personalizadas para capacitar sua equipe e alavancar seus resultados.",
+    icon: <Award className="h-6 w-6 text-primary" />
   },
 ]
 
@@ -46,7 +52,7 @@ export default function ServicesSection() {
             <Card key={index} className="p-6 text-left transition-all duration-300 border border-primary/20 hover:border-primary bg-secondary/50 rounded-lg">
                 <div className="flex justify-start mb-4">
                     <div className="p-2 border-2 border-primary rounded-full">
-                        <PlusCircle className="h-6 w-6 text-primary" />
+                        {service.icon}
                     </div>
                 </div>
               <CardHeader className="p-0">
@@ -57,7 +63,7 @@ export default function ServicesSection() {
           ))}
         </div>
         <div className="text-center mt-16">
-            <Button size="lg">Entre em contato agora</Button>
+            <Button size="lg" className="uppercase">Entre em contato agora</Button>
         </div>
       </div>
     </section>
