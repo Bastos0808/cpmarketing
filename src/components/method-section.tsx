@@ -26,7 +26,7 @@ export default function MethodSection() {
             <div className="container mx-auto px-4 md:px-6">
                  <div className="flex flex-col md:flex-row justify-between items-center mb-12">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center md:text-left mb-4 md:mb-0">Conheça nosso método</h2>
-                    <Image src="/LOGO%20RETANGULAR.svg" alt="CP Marketing Logo" width={120} height={40} data-ai-hint="logo" />
+                    <Image src="/LOGO%20REDONDA.svg" alt="CP Marketing Logo" width={80} height={80} data-ai-hint="logo" />
                  </div>
                  <div className="space-y-8">
                      {methods.map((method) => (
