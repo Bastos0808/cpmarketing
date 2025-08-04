@@ -8,11 +8,11 @@ export default function AboutSection() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="relative flex items-center justify-center max-w-md mx-auto">
-                        <div className="absolute w-[110%] h-[110%] transform scale-x-[-1] scale-y-[1]">
-                            <div className="absolute inset-[-10%] border-2 border-primary/50 rounded-full animate-spin-slow"></div>
-                            <div className="absolute inset-[-2%] border-2 border-primary/50 rounded-full animate-spin-slow-reverse"></div>
-                            <div className="absolute top-[15%] right-[5%] w-3 h-3 bg-primary transform rotate-45"></div>
-                            <div className="absolute bottom-[15%] left-[5%] w-3 h-3 bg-primary transform rotate-45"></div>
+                        <div className="absolute w-full h-full">
+                            <div className="absolute inset-0 border-2 border-primary/50 rounded-full animate-spin-slow"></div>
+                            <div className="absolute inset-[8%] border-2 border-primary/50 rounded-full animate-spin-slow-reverse"></div>
+                            <div className="absolute top-[15%] right-[5%] w-2 h-2 bg-primary transform rotate-45"></div>
+                            <div className="absolute bottom-[15%] left-[5%] w-2 h-2 bg-primary transform rotate-45"></div>
                         </div>
                         <Image src="/FOTO CAIO.jpg" alt="Carlos C" width={400} height={450} className="rounded-lg relative z-10 object-cover" data-ai-hint="man portrait" />
                     </div>
