@@ -23,11 +23,11 @@ export default function HeroSection() {
           </div>
           <div className="relative flex items-center justify-center">
             <Image
-              src="/LOGO%20REDONDA.svg"
+              src="/LOGO%20HORIZONTAL.svg"
               alt="CP Marketing Logo"
               width={500}
               height={500}
-              className="rounded-full z-10"
+              className="z-10"
               data-ai-hint="logo"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-orange-600/20 to-transparent blur-3xl rounded-full"></div>
