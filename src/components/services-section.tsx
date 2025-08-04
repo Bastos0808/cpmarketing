@@ -45,7 +45,7 @@ export default function ServicesSection() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Serviços de Alto Impacto para Levar seu Negócio ao Próximo Nível</h2>
         </div>
          <div className="flex justify-center mb-12">
-            <Image src="/FOTO M.png" alt="Woman pointing down" width={300} height={300} className="w-48 h-48 md:w-64 md:h-64 object-cover" data-ai-hint="woman pointing" />
+            <Image src="/FOTO M.png" alt="Woman pointing down" width={300} height={300} className="w-48 h-48 md:w-64 md:h-64 object-contain" data-ai-hint="woman pointing" />
         </div>
         <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-6xl lg:grid-cols-3">
           {services.map((service, index) => (
