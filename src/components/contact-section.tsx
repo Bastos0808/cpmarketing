@@ -53,12 +53,12 @@ export default function ContactSection() {
               ))}
             </div>
           </div>
-          <div className="border border-primary/50 rounded-lg p-8 space-y-4">
+          <div className="border border-primary/50 rounded-lg p-6 md:p-8 space-y-4">
             <div className="flex items-center gap-4">
                <Image src="/LOGO REDONDA.svg" alt="CP Marketing Logo" width={60} height={60} data-ai-hint="logo" />
-               <h3 className="text-xl font-bold">Marketing Digital &amp; Podcast</h3>
+               <h3 className="text-lg md:text-xl font-bold">Marketing Digital &amp; Podcast</h3>
             </div>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-sm md:text-base">
               Fale com nossa equipe! Estamos prontos para atender suas necessidades e elevar o sucesso de sua empresa.
             </p>
           </div>
@@ -72,7 +72,7 @@ export default function ContactSection() {
                 allowFullScreen={true} 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                className="rounded-lg">
+                className="rounded-lg h-[300px] md:h-[450px]">
             </iframe>
         </div>
       </div>

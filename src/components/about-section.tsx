@@ -15,7 +15,7 @@ export default function AboutSection() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="relative flex items-center justify-center max-w-lg mx-auto">
-                        <div className="absolute w-full h-full">
+                        <div className="absolute w-full h-full hidden md:block">
                             <div className="absolute inset-0 border-2 border-primary/50 rounded-full animate-spin-slow"></div>
                             <div className="absolute inset-[8%] border-2 border-primary/50 rounded-full animate-spin-slow-reverse"></div>
                             <div className="absolute top-[15%] right-[5%] w-2 h-2 bg-primary transform rotate-45"></div>
@@ -23,7 +23,7 @@ export default function AboutSection() {
                         </div>
                         <Carousel
                             plugins={[plugin.current]}
-                            className="w-full max-w-md"
+                            className="w-full max-w-xs sm:max-w-sm"
                             opts={{
                                 loop: true,
                             }}
@@ -38,7 +38,7 @@ export default function AboutSection() {
                             </CarouselContent>
                         </Carousel>
                     </div>
-                    <div className="space-y-6">
+                    <div className="space-y-6 text-center md:text-left">
                         <p className="text-primary font-semibold uppercase tracking-widest">SOBRE NÓS</p>
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">A CP Marketing: Sua Agência Completa com Estúdio de Podcast</h2>
                         <p className="text-muted-foreground">

@@ -38,15 +38,15 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-background relative animate-fade-in animation-delay-300">
+    <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-background relative animate-fade-in animation-delay-300 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
            <p className="text-primary font-semibold uppercase tracking-widest">Nossos Serviços</p>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Serviços de Alto Impacto para Levar seu Negócio ao Próximo Nível</h2>
         </div>
         
-        <div className="relative pt-96">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-auto">
+        <div className="relative pt-48 md:pt-96">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-xs sm:max-w-sm md:max-w-lg h-auto">
                 <Image 
                     src="/FOTO M.png" 
                     alt="Woman pointing down" 
