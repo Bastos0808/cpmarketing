@@ -38,7 +38,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-background relative">
+    <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-background relative animate-fade-in animation-delay-300">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
            <p className="text-primary font-semibold uppercase tracking-widest">Nossos Serviços</p>

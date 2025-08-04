@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="w-full py-20 md:py-32 lg:py-40 bg-background relative overflow-hidden">
+    <section id="hero" className="w-full py-20 md:py-32 lg:py-40 bg-background relative overflow-hidden animate-fade-in">
       <div className="container mx-auto px-4 md:px-6 z-10">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-24 items-center">
           <div className="flex flex-col justify-center space-y-6">

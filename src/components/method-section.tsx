@@ -22,7 +22,7 @@ const methods = [
 
 export default function MethodSection() {
     return (
-        <section id="method" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
+        <section id="method" className="w-full py-12 md:py-24 lg:py-32 bg-secondary animate-fade-in animation-delay-300">
             <div className="container mx-auto px-4 md:px-6">
                  <div className="flex flex-row justify-between items-center mb-12">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-left bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">Conheça nosso método</h2>

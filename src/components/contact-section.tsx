@@ -27,7 +27,7 @@ const socialLinks = [
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-secondary text-foreground">
+    <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-secondary text-foreground animate-fade-in animation-delay-300">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-8">
