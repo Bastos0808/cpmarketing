@@ -33,7 +33,7 @@ export default function AboutSection() {
                                     <Image src="/FOTO CAIO.jpg" alt="Carlos C" width={400} height={450} className="rounded-lg relative z-10 object-cover aspect-[400/450]" data-ai-hint="man portrait" />
                                 </CarouselItem>
                                 <CarouselItem>
-                                    <Image src="https://placehold.co/400x450.png" alt="Podcast Studio" width={400} height={450} className="rounded-lg relative z-10 object-cover" data-ai-hint="podcast studio" />
+                                    <Image src="https://placehold.co/400x450.png" alt="Podcast Studio" width={400} height={450} className="rounded-lg relative z-10 object-cover aspect-[400/450]" data-ai-hint="podcast studio" />
                                 </CarouselItem>
                             </CarouselContent>
                         </Carousel>
