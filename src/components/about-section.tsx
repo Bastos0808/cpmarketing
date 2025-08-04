@@ -23,7 +23,7 @@ export default function AboutSection() {
                         </div>
                         <Carousel
                             plugins={[plugin.current]}
-                            className="w-full max-w-xs sm:max-w-sm"
+                            className="w-full max-w-[350px]"
                             opts={{
                                 loop: true,
                             }}
