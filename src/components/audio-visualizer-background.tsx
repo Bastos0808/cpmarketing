@@ -2,24 +2,22 @@
 
 import React, { useRef, useEffect } from 'react';
 import * as THREE from "three";
-import { GUI } from "dat.gui";
+import type { GUI } from "dat.gui";
 
 
 const AudioVisualizerBackground = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const containerRef = useRef<HTMLDivElement>(null);
-    const playButtonRef = useRef<HTMLButtonElement>(null);
-    const fpsRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        if (typeof window === 'undefined' || !containerRef.current || !canvasRef.current || !playButtonRef.current || !fpsRef.current) return;
+        if (typeof window === 'undefined' || !containerRef.current || !canvasRef.current ) return;
         
         let scene: THREE.Scene, camera: THREE.OrthographicCamera, renderer: THREE.WebGLRenderer;
         let shaderMaterial: THREE.ShaderMaterial;
         let time = 0;
         let frameCount = 0;
         let lastTime = performance.now();
-        let fpsElement = fpsRef.current;
+        let fpsElement: HTMLDivElement | null = null;
         let gui: GUI;
 
         let audioContext: AudioContext, analyser: AnalyserNode, dataArray: Uint8Array;
@@ -76,7 +74,7 @@ const AudioVisualizerBackground = () => {
             grainMean: 0.0,
             grainVariance: 0.5,
             grainBlendMode: "Addition",
-            showGui: true,
+            showGui: false,
             showDebug: false,
             resetColors: () => {
                 applyColorPreset(settings.colorPreset);
@@ -98,8 +96,10 @@ const AudioVisualizerBackground = () => {
                 Object.assign(settings, preset);
                 updateShaderColors();
                 if (gui) {
-                    gui.destroy();
-                    setupGUI();
+                    // Refresh GUI controllers
+                    for(const controller of gui.__controllers) {
+                        controller.updateDisplay();
+                    }
                 }
             }
         }
@@ -293,7 +293,10 @@ const AudioVisualizerBackground = () => {
             }
         `;
 
-        function init() {
+        const init = async () => {
+            const dat = await import('dat.gui');
+            const GUI = dat.GUI;
+
             scene = new THREE.Scene();
             camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
             camera.position.z = 1;
@@ -349,17 +352,16 @@ const AudioVisualizerBackground = () => {
             const geometry = new THREE.PlaneGeometry(2, 2);
             const mesh = new THREE.Mesh(geometry, shaderMaterial);
             scene.add(mesh);
-            setupGUI();
+            setupGUI(GUI);
             setupEventListeners();
             setupAudio();
             animate();
+            toggleAudio();
         }
 
-        function setupGUI() {
-            if (document.querySelector('.dg.main')) {
-                document.querySelector('.dg.main')?.remove();
-            }
+        const setupGUI = (GUI: new (options?: any) => GUI) => {
             gui = new GUI({ width: 300 });
+            gui.domElement.style.display = 'none';
 
             const animationFolder = gui.addFolder("Animation");
             animationFolder.add(settings, "baseSpeed", 0.1, 3.0).onChange((value) => { shaderMaterial.uniforms.baseSpeed.value = value; });
@@ -409,6 +411,7 @@ const AudioVisualizerBackground = () => {
             });
 
             gui.close();
+            gui.domElement.style.display = 'none';
         }
 
         function setupEventListeners() {
@@ -417,11 +420,9 @@ const AudioVisualizerBackground = () => {
                 shaderMaterial.uniforms.iResolution.value.set(window.innerWidth, window.innerHeight);
             };
             window.addEventListener("resize", onResize);
-            playButtonRef.current?.addEventListener("click", toggleAudio);
             
             return () => {
                 window.removeEventListener('resize', onResize);
-                playButtonRef.current?.removeEventListener('click', toggleAudio);
             }
         }
 
@@ -447,13 +448,11 @@ const AudioVisualizerBackground = () => {
                 audioContext.resume().then(() => {
                     audioElement.play().catch(e => console.error("Error playing audio:", e));
                 });
-                if(playButtonRef.current) playButtonRef.current.textContent = "STOP";
                 playing = true;
                 shaderMaterial.uniforms.isPlaying.value = true;
                 beatTime = 0; lastKickTime = 0; beatInterval = 0;
             } else {
                 audioElement.pause();
-                if(playButtonRef.current) playButtonRef.current.textContent = "PLAY";
                 playing = false;
                 shaderMaterial.uniforms.isPlaying.value = false;
             }
@@ -553,13 +552,6 @@ const AudioVisualizerBackground = () => {
             shaderMaterial.uniforms.transitionFactor.value = transitionFactor;
             updateFrequencies();
             renderer.render(scene, camera);
-            frameCount++;
-            const now = performance.now();
-            if (now - lastTime >= 1000) {
-                fpsElement.textContent = `FPS: ${Math.round((frameCount * 1000) / (now - lastTime))}`;
-                frameCount = 0;
-                lastTime = now;
-            }
         }
         
         init();
@@ -583,12 +575,8 @@ const AudioVisualizerBackground = () => {
     }, []);
 
     return (
-        <div ref={containerRef} id="canvas-container">
+        <div ref={containerRef} id="canvas-container" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
             <canvas ref={canvasRef} id="visualizer-canvas" />
-            <div id="controls">
-                <button ref={playButtonRef} id="playButton">PLAY</button>
-            </div>
-            <div ref={fpsRef} id="fps">FPS: 0</div>
         </div>
     );
 };
