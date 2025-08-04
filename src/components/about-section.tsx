@@ -30,10 +30,10 @@ export default function AboutSection() {
                         >
                             <CarouselContent>
                                 <CarouselItem>
-                                    <Image src="/FOTO CAIO.jpg" alt="Carlos C" width={450} height={556} className="rounded-lg relative z-10 object-cover aspect-[4/5]" data-ai-hint="man portrait" />
+                                    <Image src="/FOTO CAIO.jpg" alt="Carlos C" width={400} height={580} className="rounded-lg relative z-10 object-cover aspect-[400/580]" data-ai-hint="man portrait" />
                                 </CarouselItem>
                                 <CarouselItem>
-                                    <Image src="https://placehold.co/450x556.png" alt="Podcast Studio" width={450} height={556} className="rounded-lg relative z-10 object-cover aspect-[4/5]" data-ai-hint="podcast studio" />
+                                    <Image src="https://placehold.co/400x580.png" alt="Podcast Studio" width={400} height={580} className="rounded-lg relative z-10 object-cover aspect-[400/580]" data-ai-hint="podcast studio" />
                                 </CarouselItem>
                             </CarouselContent>
                         </Carousel>
