@@ -1,34 +1,39 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Briefcase, Radio, TrendingUp, Users, Youtube, Award, PlayCircle } from "lucide-react"
+import { Briefcase, Radio, TrendingUp, Users, Youtube, Award, PlayCircle, Settings, Globe } from "lucide-react"
 import Image from "next/image"
 
 const services = [
   {
-    title: "Branding em Mídias Sociais",
-    description: "Criamos e gerenciamos sua marca nas redes sociais, aumentando o reconhecimento e o engajamento do seu público-alvo.",
+    title: "Marketing em mídias sociais",
+    description: "Promoção de empresa/marca nas mídias sociais para aumentar presença e alcance. Oferecemos criação de conteúdo, anúncios pagos, análise de métricas e interação com a comunidade.",
     icon: <Briefcase className="h-6 w-6 text-primary" />
   },
   {
-    title: "Edição de Podcast",
-    description: "Produção e edição profissional de podcasts para garantir a melhor qualidade de áudio e conteúdo para seus ouvintes.",
+    title: "Estúdio de Podcast",
+    description: "Tudo que você precisa para produzir um podcast de qualidade sonora, visual e de edição.",
     icon: <Radio className="h-6 w-6 text-primary" />
   },
   {
     title: "Gestão de Tráfego",
-    description: "Planejamos e executamos campanhas de tráfego pago para atrair mais clientes e aumentar suas vendas.",
+    description: "Gestão de tráfego em anúncios Google e Facebook. Oferecemos esse serviço para aumentar o sucesso da sua campanha publicitária.",
     icon: <TrendingUp className="h-6 w-6 text-primary" />
   },
   {
-    title: "Criação/Análise de Persona",
-    description: "Desenvolvemos a persona ideal para o seu negócio, garantindo que suas estratégias de marketing sejam eficazes.",
-    icon: <Users className="h-6 w-6 text-primary" />
+    title: "Configuração do Google Meu Negócio e SEO",
+    description: "Estratégia para melhorar a visibilidade e presença on-line da sua empresa no Google, incluindo a otimização o site para mecanismos de busca.",
+    icon: <Settings className="h-6 w-6 text-primary" />
   },
   {
-    title: "Gestão de Canal no YouTube",
-    description: "Gerenciamos seu canal no YouTube, desde a criação de conteúdo até a otimização para alcançar mais visualizações.",
+    title: "Gestão de canal no YouTube",
+    description: "Aumentar a visibilidade e sucesso do seu conteúdo no maior site de compartilhamento de vídeos do mundo.",
     icon: <Youtube className="h-6 w-6 text-primary" />
   },
+  {
+    title: "Criação de Sites",
+    description: "Oferecemos criação de sites personalizados e profissionais para ajudar a construir e fortalecer a presença on-line da sua empresa ou marca.",
+    icon: <Globe className="h-6 w-6 text-primary" />
+  }
 ]
 
 export default function ServicesSection() {
@@ -40,13 +45,13 @@ export default function ServicesSection() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Serviços de Alto Impacto para Levar seu Negócio ao Próximo Nível</h2>
         </div>
          <div className="flex justify-center mb-12">
-            <Image src="https://placehold.co/300x300" alt="Woman pointing down" width={300} height={300} className="w-48 h-48 md:w-64 md:h-64 object-cover" data-ai-hint="woman pointing" />
+            <Image src="/FOTO M.png" alt="Woman pointing down" width={300} height={300} className="w-48 h-48 md:w-64 md:h-64 object-cover" data-ai-hint="woman pointing" />
         </div>
         <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-6xl lg:grid-cols-3">
           {services.map((service, index) => (
             <Card key={index} className="p-6 text-left transition-all duration-300 border border-primary/20 hover:border-primary bg-secondary/50 rounded-lg">
                 <div className="flex justify-start mb-4">
-                    <div className="p-2 border-2 border-primary rounded-full">
+                    <div className="p-3 bg-primary/10 border-2 border-primary rounded-full">
                         {service.icon}
                     </div>
                 </div>
