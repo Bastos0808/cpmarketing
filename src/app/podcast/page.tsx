@@ -2,6 +2,7 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import PodcastHero from '@/components/podcast-hero';
 import PodcastStudio from '@/components/podcast-studio';
+import PodcastCTA from '@/components/podcast-cta';
 
 export default function PodcastPage() {
   return (
@@ -10,6 +11,7 @@ export default function PodcastPage() {
       <main className="flex-grow">
         <PodcastHero />
         <PodcastStudio />
+        <PodcastCTA />
       </main>
       <Footer />
     </div>
