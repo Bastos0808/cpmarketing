@@ -9,8 +9,8 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 const navLinks = [
-  { name: "Home", href: "#hero" },
-  { name: "Podcast", href: "#services" },
+  { name: "Home", href: "/" },
+  { name: "Podcast", href: "/podcast" },
   { name: "Contato", href: "#contact" },
 ];
 
@@ -45,7 +45,7 @@ export default function Header() {
           </nav>
           <div className="hidden md:block">
              <Button asChild>
-                <Link href="#contact">Agende sua Sessão</Link>
+                <Link href="#contact">Agende sua Consultoria Gratuita</Link>
             </Button>
           </div>
           <div className="md:hidden">
@@ -76,7 +76,7 @@ export default function Header() {
                   </nav>
                   <div className="mt-auto p-4">
                      <Button asChild className="w-full">
-                        <Link href="#contact" onClick={closeMobileMenu}>Agende sua Sessão</Link>
+                        <Link href="#contact" onClick={closeMobileMenu}>Agende sua Consultoria Gratuita</Link>
                      </Button>
                   </div>
                 </div>

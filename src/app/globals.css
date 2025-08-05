@@ -78,3 +78,8 @@
     height: 100%;
     display: block;
 }
+
+.bg-grid-orange-900\/10 {
+    background-image: linear-gradient(to right, hsl(var(--primary) / 0.1) 1px, transparent 1px), linear-gradient(to bottom, hsl(var(--primary) / 0.1) 1px, transparent 1px);
+    background-size: 4rem 4rem;
+}

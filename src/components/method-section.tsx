@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const methods = [
     {
@@ -45,7 +46,11 @@ export default function MethodSection() {
                      ))}
                  </div>
                  <div className="text-center mt-8 md:mt-12">
-                     <Button size="lg">Saiba mais</Button>
+                     <Button size="lg" asChild>
+                        <Link href="#contact">
+                            Saiba mais
+                        </Link>
+                     </Button>
                  </div>
             </div>
         </section>
