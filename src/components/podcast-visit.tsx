@@ -26,7 +26,7 @@ export default function PodcastVisit() {
                                 className="rounded-lg"
                                 data-ai-hint="man pointing" 
                             />
-                            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg -mt-3">
+                            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg -mt-2">
                                 <Link href="#contato">ENTRE EM CONTATO AGORA</Link>
                             </Button>
                         </div>
