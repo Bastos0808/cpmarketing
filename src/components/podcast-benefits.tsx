@@ -1,6 +1,9 @@
 import { Award, BarChart, Tv, Users, Video, Edit, CheckCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { InteractiveCard } from "./interactive-card";
+import './interactive-card.css';
+
 
 const benefits = [
     {
@@ -99,20 +102,23 @@ export default function PodcastBenefits() {
                             </ul>
                         </div>
                         <div>
-                             <div className="bg-secondary/50 border border-border rounded-lg p-8">
-                                <h3 className="text-xl font-bold mb-4 text-center">Processo Simplificado</h3>
-                                 <div className="space-y-6">
-                                    {steps.map((step) => (
-                                        <div key={step.number} className="flex items-start gap-4">
-                                            <div className="text-2xl font-bold text-primary">{step.number}</div>
-                                            <div>
-                                                <h4 className="font-semibold">{step.title}</h4>
-                                                <p className="text-sm text-white/70">{step.description}</p>
+                            <InteractiveCard>
+                                <div className="card-interactive bg-secondary/50 border border-border rounded-lg p-8">
+                                    <div className="glow"></div>
+                                    <h3 className="text-xl font-bold mb-4 text-center">Processo Simplificado</h3>
+                                    <div className="space-y-6">
+                                        {steps.map((step) => (
+                                            <div key={step.number} className="flex items-start gap-4">
+                                                <div className="text-2xl font-bold text-primary">{step.number}</div>
+                                                <div>
+                                                    <h4 className="font-semibold">{step.title}</h4>
+                                                    <p className="text-sm text-white/70">{step.description}</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    ))}
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
+                            </InteractiveCard>
                         </div>
                     </div>
                 </div>
