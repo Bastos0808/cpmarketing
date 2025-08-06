@@ -132,7 +132,7 @@
   cursor: pointer;
 }
 
-.buttons-container li a {
+.buttons-container li span {
   display: inline-block;
   color: gray;
   text-decoration: none;
@@ -147,7 +147,7 @@
   box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.8);
 }
 
-.buttons-container li a.active-text {
+.buttons-container li span.active-text {
   color: hsl(var(--primary));
   text-shadow: 0 0 15px hsla(var(--primary), 0.5);
 }
