@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Instagram, Youtube, Mail, MapPin, Phone, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
+import { Button } from './ui/button';
 
 const socialLinks = [
   {
@@ -21,6 +22,10 @@ export default function ContactSection() {
   return (
     <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-secondary text-foreground animate-fade-in animation-delay-300">
       <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-12">
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl">Fale Conosco</h2>
+            <p className="text-muted-foreground mt-2">Estamos prontos para atender suas necessidades.</p>
+        </div>
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <div className="flex items-center gap-4">
@@ -37,25 +42,26 @@ export default function ContactSection() {
                 Rua 239 Quadra 532 Lote 19 - Jardim América - Goiânia - Próximo ao Ginasio e ao lado do Condomínio Muy Bueno
               </span>
             </div>
-            <div className="flex items-center gap-4">
-                <a href="https://wa.me/556291528778" target="_blank" rel="noopener noreferrer" className="p-2 bg-green-500 rounded-full hover:bg-green-600 transition-colors">
-                    <MessageCircle className="h-6 w-6 text-white" />
+             <div className="flex items-center gap-4 pt-4">
+                <a href="https://wa.me/556291528778" target="_blank" rel="noopener noreferrer" className="p-3 bg-green-500 rounded-full hover:bg-green-600 transition-colors">
+                    <MessageCircle className="h-7 w-7 text-white" />
                 </a>
               {socialLinks.map((social) => (
-                <Link key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className={`p-2 rounded-full transition-colors ${social.className}`}>
+                <Link key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className={`p-3 rounded-full transition-colors ${social.className}`}>
                   {social.icon}
                 </Link>
               ))}
             </div>
           </div>
-          <div className="border border-primary/50 rounded-lg p-6 md:p-8 space-y-4">
-            <div className="flex items-center gap-4">
-               <Image src="/LOGO REDONDA.svg" alt="CP Marketing Logo" width={50} height={50} data-ai-hint="logo" />
-               <h3 className="text-base md:text-xl font-bold">Marketing Digital &amp; Podcast</h3>
-            </div>
-            <p className="text-muted-foreground text-sm">
-              Fale com nossa equipe! Estamos prontos para atender suas necessidades e elevar o sucesso de sua empresa.
+          <div className="flex flex-col items-center justify-center text-center p-6 md:p-8 space-y-4 border border-primary/20 rounded-lg">
+             <Image src="/LOGO REDONDA.svg" alt="CP Marketing Logo" width={80} height={80} data-ai-hint="logo" />
+             <h3 className="text-xl md:text-2xl font-bold">Pronto para começar?</h3>
+            <p className="text-muted-foreground text-sm max-w-sm">
+                Agende uma consultoria gratuita e descubra como podemos transformar a presença digital do seu negócio.
             </p>
+            <Button asChild size="lg" className="mt-4">
+                <Link href="/contato">Agendar Consultoria</Link>
+            </Button>
           </div>
         </div>
         <div className="mt-12 md:mt-16">

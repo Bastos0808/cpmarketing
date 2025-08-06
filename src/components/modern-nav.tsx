@@ -7,14 +7,17 @@ import { usePathname } from 'next/navigation';
 const navItems = [
   { href: '/', label: 'Home' },
   { href: '/podcast', label: 'Podcast' },
-  { href: '/#contact', label: 'Contato' },
+  { href: '/contato', label: 'Contato' },
 ];
 
 const ModernNav = () => {
   const pathname = usePathname();
   
   const getInitialActiveIndex = () => {
-    const activeIndex = navItems.findIndex(item => item.href === pathname);
+    // Exact match for homepage
+    if (pathname === '/') return 0;
+    // For other pages, find the one that starts with the href
+    const activeIndex = navItems.findIndex(item => item.href !== '/' && pathname.startsWith(item.href));
     return activeIndex === -1 ? 0 : activeIndex;
   }
 

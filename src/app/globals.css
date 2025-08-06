@@ -151,3 +151,59 @@
   color: hsl(var(--primary));
   text-shadow: 0 0 15px hsla(var(--primary), 0.5);
 }
+
+/* RD Station Form Styles */
+#rd-form-mcumqijq {
+  background-color: transparent !important;
+  border: 1px solid hsl(var(--border)) !important;
+  border-radius: var(--radius) !important;
+  padding: 2rem !important;
+}
+
+#rd-form-mcumqijq .rd-form-field {
+  margin-bottom: 1.5rem !important;
+}
+
+#rd-form-mcumqijq label {
+  color: hsl(var(--foreground)) !important;
+  font-size: 0.875rem !important;
+  margin-bottom: 0.5rem !important;
+  display: block;
+}
+
+#rd-form-mcumqijq input,
+#rd-form-mcumqijq select {
+  width: 100% !important;
+  height: 2.5rem !important;
+  padding: 0 0.75rem !important;
+  background-color: hsl(var(--input)) !important;
+  border: 1px solid hsl(var(--border)) !important;
+  border-radius: calc(var(--radius) - 2px) !important;
+  color: hsl(var(--foreground)) !important;
+  font-size: 0.875rem !important;
+}
+
+#rd-form-mcumqijq input::placeholder {
+  color: hsl(var(--muted-foreground)) !important;
+}
+
+#rd-form-mcumqijq button[type="submit"] {
+  width: 100% !important;
+  height: 2.75rem !important;
+  background-color: hsl(var(--primary)) !important;
+  color: hsl(var(--primary-foreground)) !important;
+  border: none !important;
+  border-radius: calc(var(--radius) - 2px) !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s ease-in-out !important;
+}
+
+#rd-form-mcumqijq button[type="submit"]:hover {
+  background-color: hsl(var(--primary) / 0.9) !important;
+}
+
+#rd-form-mcumqijq .rd-checkbox-options {
+  display: none !important;
+}
