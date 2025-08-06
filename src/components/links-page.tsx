@@ -29,7 +29,7 @@ export default function LinksPage() {
             icon: <MessageCircle className="h-5 w-5" />,
         },
         {
-            href: "/",
+            href: `/${paramsString ? `?${paramsString}` : ''}`,
             text: "Nosso Site",
             icon: <Globe className="h-5 w-5" />,
         },
@@ -39,7 +39,7 @@ export default function LinksPage() {
             icon: <Podcast className="h-5 w-5" />,
         },
         {
-            href: "/contato",
+            href: `/contato${paramsString ? `?${paramsString}` : ''}`,
             text: "Contato",
             icon: <Mail className="h-5 w-5" />,
         },
