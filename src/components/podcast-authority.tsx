@@ -43,7 +43,7 @@ export default function PodcastAuthority() {
                     </div>
                      <div className="relative flex items-center justify-center">
                         <Image 
-                            src="https://placehold.co/600x600.png" 
+                            src="/IMG_3107.png" 
                             alt="Mulher falando em um microfone de podcast" 
                             width={600} 
                             height={600} 
