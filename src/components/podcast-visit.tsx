@@ -12,20 +12,37 @@ export default function PodcastVisit() {
                     <h2 className="text-2xl md:text-3xl font-bold tracking-tight">VENHA CONHECER NOSSO ESTÚDIO, <br /> AGENDE UMA VISITA</h2>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8 items-center">
-                    <div className="space-y-6 text-left">
+                <div className="grid md:grid-cols-2 gap-8 items-start">
+                    <div className="space-y-6 text-left flex flex-col justify-between h-full">
                         <p className="text-white/80">
                             Na CP Marketing, você encontra um estúdio de podcast completo, com estrutura profissional para gravações ou transmissões ao vivo. Oferecemos áudio cristalino, com microfones de alta performance e tratamento acústico, e vídeo em altíssima qualidade, com câmeras e iluminação profissional.
                         </p>
+                        <div className="flex flex-col items-center">
+                            <Image 
+                                src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/FOTO%20GB.png?alt=media&token=d82734eb-7a58-4416-82de-fbe8be66ef35" 
+                                alt="Homem apontando para baixo" 
+                                width={400} 
+                                height={400} 
+                                className="rounded-lg mb-4"
+                                data-ai-hint="man pointing" 
+                            />
+                            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg">
+                                <Link href="#contato">ENTRE EM CONTATO AGORA</Link>
+                            </Button>
+                        </div>
+                    </div>
+                     <div className="space-y-6 text-left">
+                        <Image 
+                            src="/PODCAST 02.png" 
+                            alt="Estúdio de Podcast da CP Marketing" 
+                            width={600} 
+                            height={400} 
+                            className="rounded-lg w-full"
+                            data-ai-hint="podcast studio" 
+                        />
                         <p className="text-white/80">
                             Nossa equipe cuida de toda a produção e edição, entregando um resultado envolvente e pronto para impactar. Seja você criador, empresa ou influenciador, aqui seu conteúdo ganha forma com excelência.
                         </p>
-                         <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg">
-                            <Link href="#contato">ENTRE EM CONTATO AGORA</Link>
-                        </Button>
-                    </div>
-                     <div className="flex flex-col items-center justify-center">
-                        <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/FOTO%20GB.png?alt=media&token=d82734eb-7a58-4416-82de-fbe8be66ef35" alt="Homem apontando para baixo" width={500} height={500} className="rounded-lg" data-ai-hint="man pointing" />
                     </div>
                 </div>
             </div>
