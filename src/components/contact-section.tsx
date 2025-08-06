@@ -34,7 +34,7 @@ export default function ContactSection() {
             </div>
             <div className="flex items-center gap-4">
               <Mail className="h-5 w-5 text-primary" />
-              <span className="text-muted-foreground text-sm md:text-base">marketingcpgo@gmail.com</span>
+              <span className="text-muted-foreground text-sm md:text-base">comercialcpgo@gmail.com</span>
             </div>
             <div className="flex items-start gap-4">
               <MapPin className="h-5 w-5 text-primary mt-1" />
