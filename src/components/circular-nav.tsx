@@ -17,7 +17,7 @@ const CircularNav = () => {
       <nav className="circular-nav">
         {navItems.map((item) => (
           <Link key={item.label} href={item.href} passHref>
-            <button type="button" title={item.label} className="circular-nav-button">
+            <button type="button" className="circular-nav-button">
               <span className="nav-text">{item.label}</span>
               <span className="nav-icon" aria-hidden="true">
                 {item.icon}
