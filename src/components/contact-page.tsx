@@ -21,7 +21,7 @@ export default function ContactPage() {
                             </p>
                         </div>
                         <Image 
-                            src="https://placehold.co/600x400.png" 
+                            src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%2013.png?alt=media&token=fa55bcd8-1973-43ad-be60-a1047b89a3b1" 
                             alt="Especialista em marketing analisando gráficos" 
                             width={600} 
                             height={400} 
