@@ -5,6 +5,7 @@ import PodcastStudio from '@/components/podcast-studio';
 import PodcastCTA from '@/components/podcast-cta';
 import PodcastVisit from '@/components/podcast-visit';
 import PodcastAuthority from '@/components/podcast-authority';
+import PodcastContactSection from '@/components/podcast-contact-section';
 
 export default function PodcastPage() {
   return (
@@ -16,6 +17,7 @@ export default function PodcastPage() {
         <PodcastStudio />
         <PodcastAuthority />
         <PodcastVisit />
+        <PodcastContactSection />
       </main>
       <Footer />
     </div>
