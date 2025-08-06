@@ -12,14 +12,14 @@ const RDSTATION_FORM_ID = 'form-podcast-site-cp-1b74a013bfb40aa609d8';
 
 export default function PodcastRdstationForm() {
   useEffect(() => {
+    const formContainer = document.getElementById(RDSTATION_FORM_ID);
+
     const initializeForm = () => {
       // Ensure the container exists and RDStationForms is available
-      if (document.getElementById(RDSTATION_FORM_ID) && window.RDStationForms) {
-        // Check if a form has already been created in this container
-        const formContainer = document.getElementById(RDSTATION_FORM_ID);
-        if (formContainer && formContainer.childElementCount === 0) {
-          new window.RDStationForms(RDSTATION_FORM_ID, 'null').createForm();
-        }
+      if (formContainer && window.RDStationForms) {
+        // Clear any previous form to prevent duplication
+        formContainer.innerHTML = '';
+        new window.RDStationForms(RDSTATION_FORM_ID, 'null').createForm();
       }
     };
 
