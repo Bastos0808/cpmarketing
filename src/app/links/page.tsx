@@ -1,5 +1,10 @@
 import LinksPage from '@/components/links-page';
+import { Suspense } from 'react';
 
 export default function Links() {
-  return <LinksPage />;
+  return (
+    <Suspense>
+      <LinksPage />
+    </Suspense>
+  );
 }
