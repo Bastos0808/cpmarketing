@@ -22,12 +22,12 @@ export default function PodcastCTA() {
                                 Rua C-239, Quadra 532, Lote 19 - Setor Jardim América, ao lado do condomínio Muy Bueno, próximo ao ginásio, Goiânia, GO, Brasil
                             </p>
                         </div>
-                        <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg">
+                    </div>
+                    <div className="flex flex-col items-center justify-center gap-4">
+                        <Image src="/FOTO CAIO.png?v=4" alt="Carlos, CEO da CP Marketing" width={400} height={400} className="rounded-lg" data-ai-hint="man portrait" />
+                         <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg mt-4">
                             <Link href="#contact">Entre em contato</Link>
                         </Button>
-                    </div>
-                    <div className="flex items-center justify-center">
-                        <Image src="/FOTO CAIO.png?v=4" alt="Carlos, CEO da CP Marketing" width={400} height={400} className="rounded-lg" data-ai-hint="man portrait" />
                     </div>
                 </div>
             </div>
