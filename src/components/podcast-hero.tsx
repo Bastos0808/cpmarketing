@@ -10,18 +10,16 @@ export default function PodcastHero() {
         </div>
         <div className="mt-8 md:mt-12 mx-auto max-w-5xl">
           <div className="aspect-video bg-border/50 rounded-2xl overflow-hidden border border-primary flex items-center justify-center">
-            <div className="relative w-full h-full">
-              <video
-                src="/video-do-estudio.mp4"
-                width="100%"
-                height="100%"
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <video
+              src="/video-do-estudio.mp4"
+              width="100%"
+              height="100%"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
