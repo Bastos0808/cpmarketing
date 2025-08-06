@@ -9,16 +9,18 @@ export default function PodcastHero() {
           </h1>
         </div>
         <div className="mt-8 md:mt-12 mx-auto max-w-5xl">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full aspect-video bg-border/50 rounded-2xl overflow-hidden border border-primary object-cover"
-          >
-            <source src="/video-do-estudio.mp4" type="video/mp4" />
-            Seu navegador não suporta a tag de vídeo.
-          </video>
+          <div className="w-full aspect-video bg-border/50 rounded-2xl overflow-hidden border border-primary relative">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="absolute top-0 left-0 w-full h-full object-cover"
+            >
+              <source src="/video-do-estudio.mp4" type="video/mp4" />
+              Seu navegador não suporta a tag de vídeo.
+            </video>
+          </div>
         </div>
       </div>
     </section>
