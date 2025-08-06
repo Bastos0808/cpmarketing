@@ -20,7 +20,7 @@ export default function ContactPage() {
                                 Agende uma consultoria gratuita com nossos especialistas e receba um diagnóstico completo. Vamos identificar as oportunidades, corrigir as falhas e construir um plano de ação que gera resultados reais.
                             </p>
                         </div>
-                        <div className="relative w-full h-[400px] md:h-[500px] lg:h-auto lg:flex-grow">
+                        <div className="relative w-full h-[400px] md:h-[500px] lg:h-[700px]">
                             <Image 
                                 src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%2013.png?alt=media&token=fa55bcd8-1973-43ad-be60-a1047b89a3b1" 
                                 alt="Especialista em marketing analisando gráficos" 
