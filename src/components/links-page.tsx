@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Instagram, Youtube, MessageCircle, Globe, Podcast, Mail } from "lucide-react";
+import WarpSpeedBackground from "./warp-speed-background";
 
 const links = [
     {
@@ -40,8 +41,9 @@ const links = [
 
 export default function LinksPage() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground p-4">
-            <div className="w-full max-w-md mx-auto">
+        <div className="relative flex flex-col items-center justify-center min-h-screen text-foreground p-4 overflow-hidden">
+            <WarpSpeedBackground />
+            <div className="relative z-10 w-full max-w-md mx-auto">
                 <div className="flex flex-col items-center space-y-6">
                     <Image
                         src="/LOGO REDONDA.svg"
@@ -56,7 +58,12 @@ export default function LinksPage() {
                     </h1>
                     <div className="w-full space-y-4">
                         {links.map((link) => (
-                            <Button key={link.href} asChild className="w-full" size="lg">
+                            <Button
+                                key={link.href}
+                                asChild
+                                className="w-full bg-black/50 border border-white/20 backdrop-blur-sm hover:bg-white/20 text-white transition-colors duration-300"
+                                size="lg"
+                            >
                                 <Link href={link.href} target={link.href.startsWith("http") ? "_blank" : "_self"} rel="noopener noreferrer">
                                     {link.icon}
                                     <span>{link.text}</span>
