@@ -1,4 +1,3 @@
-import { CirclePlay } from 'lucide-react';
 
 export default function PodcastHero() {
   return (
@@ -12,15 +11,16 @@ export default function PodcastHero() {
         <div className="mt-8 md:mt-12 mx-auto max-w-5xl">
           <div className="aspect-video bg-border/50 rounded-2xl overflow-hidden border border-primary flex items-center justify-center">
             <div className="relative w-full h-full">
-              <iframe
+              <video
+                src="/video-do-estudio.mp4"
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/QmWmDr5OKyM?autoplay=1&mute=1&loop=1&playlist=QmWmDr5OKyM&vq=hd720"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
