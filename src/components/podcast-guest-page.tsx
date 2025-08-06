@@ -16,8 +16,8 @@ export default function PodcastGuestPage() {
         <section id="form" className="w-full min-h-screen py-12 md:py-24 lg:py-32 bg-background relative flex items-center justify-center">
             <div className="absolute inset-0 bg-grid-orange-900/10 [mask-image:linear-gradient(to_bottom,white_5%,transparent_50%)]"></div>
             <div className="container mx-auto px-4 md:px-6 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-12">
-                    <div className="flex flex-col justify-between h-full space-y-8">
+                <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+                    <div className="flex flex-col space-y-8">
                         <div className="space-y-6">
                             <Badge variant="outline" className="w-fit border-primary text-primary">PARTICIPAÇÃO GRATUITA</Badge>
                             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
@@ -39,21 +39,21 @@ export default function PodcastGuestPage() {
                                 align: "start",
                                 loop: true,
                             }}
-                            className="w-full max-w-lg"
+                            className="w-full max-w-lg flex-grow"
                             onMouseEnter={plugin.current.stop}
                             onMouseLeave={plugin.current.reset}
                             >
-                            <CarouselContent>
-                                <CarouselItem>
-                                     <Image src="/PODCAST 01.png" alt="Estúdio de Podcast da CP Marketing" width={500} height={500} className="rounded-lg object-cover aspect-video" data-ai-hint="podcast studio" />
+                            <CarouselContent className="h-full">
+                                <CarouselItem className="h-full">
+                                     <Image src="/PODCAST 01.png" alt="Estúdio de Podcast da CP Marketing" width={500} height={500} className="rounded-lg object-cover w-full h-full aspect-video" data-ai-hint="podcast studio" />
                                 </CarouselItem>
-                                 <CarouselItem>
-                                     <Image src="/PODCAST 02.png" alt="Detalhe do estúdio de podcast" width={500} height={500} className="rounded-lg object-cover aspect-video" data-ai-hint="podcast studio detail" />
+                                 <CarouselItem className="h-full">
+                                     <Image src="/PODCAST 02.png" alt="Detalhe do estúdio de podcast" width={500} height={500} className="rounded-lg object-cover w-full h-full aspect-video" data-ai-hint="podcast studio detail" />
                                 </CarouselItem>
                             </CarouselContent>
                         </Carousel>
                     </div>
-                    <div className="w-full h-auto bg-secondary/50 border border-border rounded-lg flex items-center justify-center p-4">
+                    <div className="w-full h-full bg-secondary/50 border border-border rounded-lg flex items-center justify-center p-4">
                         <PodcastGuestRdstationForm />
                     </div>
                 </div>
