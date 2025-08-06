@@ -1,5 +1,3 @@
-import PodcastRdstationForm from './podcast-rdstation-form';
-
 export default function PodcastContactSection() {
     return (
         <section id="contato" className="w-full py-12 md:py-24 lg:py-32 bg-background relative">
@@ -13,7 +11,9 @@ export default function PodcastContactSection() {
                     </p>
                 </div>
                 <div className="mt-8 md:mt-12 max-w-xl mx-auto">
-                    <PodcastRdstationForm />
+                    <div className="w-full h-96 bg-secondary/50 border border-border rounded-lg flex items-center justify-center">
+                        <p className="text-muted-foreground">Espaço reservado para o formulário de podcast.</p>
+                    </div>
                 </div>
             </div>
         </section>
