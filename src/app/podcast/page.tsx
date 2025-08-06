@@ -3,6 +3,7 @@ import Footer from '@/components/footer';
 import PodcastHero from '@/components/podcast-hero';
 import PodcastStudio from '@/components/podcast-studio';
 import PodcastCTA from '@/components/podcast-cta';
+import PodcastVisit from '@/components/podcast-visit';
 
 export default function PodcastPage() {
   return (
@@ -12,6 +13,7 @@ export default function PodcastPage() {
         <PodcastHero />
         <PodcastCTA />
         <PodcastStudio />
+        <PodcastVisit />
       </main>
       <Footer />
     </div>
