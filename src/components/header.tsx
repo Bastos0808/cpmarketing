@@ -3,7 +3,7 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import CircularNav from "./circular-nav"
+import ModernNav from "./circular-nav"
 
 export default function Header() {
   return (
@@ -13,7 +13,7 @@ export default function Header() {
             <Image src="/LOGO%20REDONDA.svg" alt="CP Marketing Logo" width={60} height={60} data-ai-hint="logo" />
             <span className="sr-only">CP Marketing</span>
           </Link>
-          <CircularNav />
+          <ModernNav />
       </div>
     </header>
   )
