@@ -18,7 +18,7 @@ export default function PodcastStudio() {
 
                     <div className="max-w-3xl space-y-6">
                         <p className="text-white/80">
-                            Apresentamos o estúdio da CP Marketing, um espaço pensado especialmente para você que deseja criar podcasts autênticos e de qualidade. Com um ambiente que traduz a essência do seu conteúdo, oferecemos a estrutura ideal para dar voz às suas ideias e conectar sua mensagem ao público certo. Venha para um estúdio que fala a sua língua e transforme suas gravações em experiências únicas e cativantes.
+                            Apresentamos o estúdio da CP Marketing, um espaço pensado para você que deseja criar podcasts autênticos e de qualidade. Ter um podcast é uma ferramenta poderosa para construir autoridade em seu nicho, permitindo que você compartilhe conhecimento e se conecte diretamente com seu público. Oferecemos a estrutura ideal para dar voz às suas ideias e transformar suas gravações em experiências únicas.
                         </p>
                         <Button asChild>
                             <Link href="#contact">Saiba mais</Link>
