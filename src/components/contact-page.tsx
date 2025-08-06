@@ -1,3 +1,5 @@
+import RdstationForm from "./rdstation-form";
+
 export default function ContactPage() {
     return (
         <section className="w-full py-12 md:py-24 lg:py-32 bg-background relative">
@@ -22,8 +24,8 @@ export default function ContactPage() {
                         </div>
                     </div>
                     <div className="lg:col-span-3">
-                        <div className="w-full h-96 bg-secondary/50 border border-border rounded-lg flex items-center justify-center">
-                            <p className="text-muted-foreground">Espaço reservado para o formulário de contato.</p>
+                        <div className="w-full h-auto bg-secondary/50 border border-border rounded-lg flex items-center justify-center p-4">
+                           <RdstationForm />
                         </div>
                     </div>
                 </div>
