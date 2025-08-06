@@ -19,7 +19,7 @@ export default function PodcastVisit() {
                         </p>
                         <div className="flex flex-col items-center">
                              <Image src="/FOTO GB.png" alt="Homem apontando para baixo" width={400} height={400} className="w-full max-w-sm" data-ai-hint="man pointing" />
-                             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg -mt-8">
+                             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg mt-4">
                                 <Link href="#contact">ENTRE EM CONTATO AGORA</Link>
                             </Button>
                         </div>
