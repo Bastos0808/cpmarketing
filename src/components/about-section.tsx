@@ -7,7 +7,7 @@ import Autoplay from "embla-carousel-autoplay"
 
 export default function AboutSection() {
     const plugin = React.useRef(
-        Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true })
+        Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true })
     )
 
     return (
