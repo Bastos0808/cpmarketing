@@ -4,6 +4,7 @@ import { Briefcase, Radio, TrendingUp, Users, Youtube, Award, PlayCircle, Settin
 import Image from "next/image"
 import { InteractiveCard } from "./interactive-card";
 import './interactive-card.css';
+import Link from "next/link";
 
 
 const services = [
@@ -80,7 +81,9 @@ export default function ServicesSection() {
         </div>
 
         <div className="text-center mt-12 md:mt-16">
-            <Button size="lg" className="uppercase">Entre em contato agora</Button>
+            <Button size="lg" className="uppercase" asChild>
+                <Link href="/contato">Entre em contato agora</Link>
+            </Button>
         </div>
       </div>
     </section>

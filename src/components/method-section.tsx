@@ -47,7 +47,7 @@ export default function MethodSection() {
                  </div>
                  <div className="text-center mt-8 md:mt-12">
                      <Button size="lg" asChild>
-                        <Link href="#contact">
+                        <Link href="/contato">
                             Saiba mais
                         </Link>
                      </Button>

@@ -19,7 +19,7 @@ export default function HeroSection() {
                 </p>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center lg:justify-start">
                 <Button asChild size="lg">
-                    <Link href="#contact">Agende sua Consultoria Gratuita</Link>
+                    <Link href="/contato">Agende sua Consultoria Gratuita</Link>
                 </Button>
                 </div>
             </div>
