@@ -9,7 +9,7 @@ export default function PodcastHero() {
           </h1>
         </div>
         <div className="mt-8 md:mt-12 mx-auto max-w-5xl">
-          <div className="w-full aspect-video bg-border/50 rounded-2xl overflow-hidden border border-primary relative">
+          <div className="relative aspect-video rounded-2xl overflow-hidden border border-primary">
             <video
               autoPlay
               muted
@@ -17,7 +17,7 @@ export default function PodcastHero() {
               playsInline
               className="absolute top-0 left-0 w-full h-full object-cover"
             >
-              <source src="https://storage.googleapis.com/builder-9b63de63-2252-4299-9ed4-73895e636142/video-do-estudio.mp4" type="video/mp4" />
+              <source src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/video-do-estudio.mp4?alt=media&token=3291830a-49be-4c27-b25b-25cefdd6ad80" type="video/mp4" />
               Seu navegador não suporta a tag de vídeo.
             </video>
           </div>
