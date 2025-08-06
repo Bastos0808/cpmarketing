@@ -9,10 +9,10 @@ export default function ContactPage() {
                 <div className="grid md:grid-cols-2 gap-12 items-start">
                     <div className="flex flex-col space-y-6">
                         <div>
-                            <p className="text-primary font-semibold uppercase tracking-widest text-sm">Consultoria Gratuita</p>
-                            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
-                                Destrave o Potencial do seu Negócio Agora.
+                             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
+                                Consultoria Gratuita
                             </h1>
+                            <p className="text-xl font-semibold mt-2 text-white">Destrave o Potencial do seu Negócio Agora.</p>
                             <p className="max-w-[600px] text-gray-300 md:text-lg text-sm mt-4">
                                 Sua marca tem uma história única, mas ela está sendo ouvida? Muitos negócios com grande potencial ficam para trás por não terem uma estratégia de marketing digital clara. Não deixe a incerteza e a falta de direção impedirem seu crescimento.
                             </p>
