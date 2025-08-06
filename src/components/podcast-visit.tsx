@@ -23,10 +23,10 @@ export default function PodcastVisit() {
                                 alt="Homem apontando para baixo" 
                                 width={400} 
                                 height={400} 
-                                className="rounded-lg mb-4"
+                                className="rounded-lg"
                                 data-ai-hint="man pointing" 
                             />
-                            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg">
+                            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg -mt-8">
                                 <Link href="#contato">ENTRE EM CONTATO AGORA</Link>
                             </Button>
                         </div>
