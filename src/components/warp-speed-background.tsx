@@ -58,7 +58,7 @@ const WarpSpeedBackground = () => {
             }
 
             if (warp === 0) {
-                c.fillStyle = "rgba(0,10,20,1)";
+                c.fillStyle = "rgba(0,0,0,1)";
                 c.fillRect(0, 0, canvas.width, canvas.height);
             }
 
