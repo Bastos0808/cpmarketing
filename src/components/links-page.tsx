@@ -14,6 +14,11 @@ export default function LinksPage() {
 
     const links = useMemo(() => [
         {
+            href: `/contato${paramsString ? `?${paramsString}` : ''}`,
+            text: "Agende sua consultoria gratuita",
+            icon: <Mail className="h-5 w-5" />,
+        },
+        {
             href: "https://www.instagram.com/cpmarketingbr",
             text: "Instagram",
             icon: <Instagram className="h-5 w-5" />,
@@ -37,11 +42,6 @@ export default function LinksPage() {
             href: `/podcast${paramsString ? `?${paramsString}` : ''}`,
             text: "Estúdio de Podcast",
             icon: <Podcast className="h-5 w-5" />,
-        },
-        {
-            href: `/contato${paramsString ? `?${paramsString}` : ''}`,
-            text: "Contato",
-            icon: <Mail className="h-5 w-5" />,
         },
     ], [paramsString]);
 
