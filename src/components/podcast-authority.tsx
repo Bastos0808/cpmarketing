@@ -38,7 +38,7 @@ export default function PodcastAuthority() {
                             ))}
                         </div>
                          <Button asChild size="lg" className="mt-4">
-                            <Link href="#contact">Quero construir minha autoridade</Link>
+                            <Link href="#contato">Quero construir minha autoridade</Link>
                         </Button>
                     </div>
                      <div className="relative flex items-center justify-center">

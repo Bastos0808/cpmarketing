@@ -17,10 +17,9 @@ export default function PodcastVisit() {
                         <p className="text-white/80">
                             Na CP Marketing, você encontra um estúdio de podcast completo, com estrutura profissional para gravações ou transmissões ao vivo. Oferecemos áudio cristalino, com microfones de alta performance e tratamento acústico, e vídeo em altíssima qualidade, com câmeras e iluminação profissional.
                         </p>
-                        <div className="flex flex-col items-center">
-                             <Image src="/FOTO GB.png" alt="Homem apontando para baixo" width={400} height={400} className="w-full max-w-sm" data-ai-hint="man pointing" />
+                        <div className="flex flex-col">
                              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg -mt-1">
-                                <Link href="#contact">ENTRE EM CONTATO AGORA</Link>
+                                <Link href="#contato">ENTRE EM CONTATO AGORA</Link>
                             </Button>
                         </div>
                     </div>
