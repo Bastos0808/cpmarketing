@@ -40,7 +40,7 @@ const links = [
 
 export default function LinksPage() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-[calc(100vh-14rem)] bg-background text-foreground p-4">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground p-4">
             <div className="w-full max-w-md mx-auto">
                 <div className="flex flex-col items-center space-y-6">
                     <Image
