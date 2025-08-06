@@ -5,41 +5,46 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Instagram, Youtube, MessageCircle, Globe, Podcast, Mail } from "lucide-react";
 import WarpSpeedBackground from "./warp-speed-background";
-
-const links = [
-    {
-        href: "https://www.instagram.com/cpmarketingbr",
-        text: "Instagram",
-        icon: <Instagram className="h-5 w-5" />,
-    },
-    {
-        href: "https://www.youtube.com/@cpmarketingbr",
-        text: "Youtube",
-        icon: <Youtube className="h-5 w-5" />,
-    },
-    {
-        href: "https://wa.me/556291528778",
-        text: "WhatsApp",
-        icon: <MessageCircle className="h-5 w-5" />,
-    },
-    {
-        href: "/",
-        text: "Nosso Site",
-        icon: <Globe className="h-5 w-5" />,
-    },
-    {
-        href: "/podcast",
-        text: "Estúdio de Podcast",
-        icon: <Podcast className="h-5 w-5" />,
-    },
-    {
-        href: "/contato",
-        text: "Contato",
-        icon: <Mail className="h-5 w-5" />,
-    },
-];
+import { useSearchParams } from 'next/navigation';
+import { useMemo } from "react";
 
 export default function LinksPage() {
+    const searchParams = useSearchParams();
+    const paramsString = searchParams.toString();
+
+    const links = useMemo(() => [
+        {
+            href: "https://www.instagram.com/cpmarketingbr",
+            text: "Instagram",
+            icon: <Instagram className="h-5 w-5" />,
+        },
+        {
+            href: "https://www.youtube.com/@cpmarketingbr",
+            text: "Youtube",
+            icon: <Youtube className="h-5 w-5" />,
+        },
+        {
+            href: "https://wa.me/556291528778",
+            text: "WhatsApp",
+            icon: <MessageCircle className="h-5 w-5" />,
+        },
+        {
+            href: "/",
+            text: "Nosso Site",
+            icon: <Globe className="h-5 w-5" />,
+        },
+        {
+            href: `/podcast${paramsString ? `?${paramsString}` : ''}`,
+            text: "Estúdio de Podcast",
+            icon: <Podcast className="h-5 w-5" />,
+        },
+        {
+            href: "/contato",
+            text: "Contato",
+            icon: <Mail className="h-5 w-5" />,
+        },
+    ], [paramsString]);
+
     return (
         <div className="relative flex flex-col items-center justify-center min-h-screen text-foreground p-4 overflow-hidden">
             <WarpSpeedBackground />
