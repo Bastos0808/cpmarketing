@@ -34,7 +34,7 @@ export default function ContactSection() {
             </div>
             <div className="flex items-center gap-4">
               <Mail className="h-5 w-5 text-primary" />
-              <span className="text-muted-foreground text-sm md:text-base">comercialcpgo@gmail.com</span>
+              <span className="text-muted-foreground text-sm md:text-base">comercial@cpmarketing.com.br</span>
             </div>
             <div className="flex items-start gap-4">
               <MapPin className="h-5 w-5 text-primary mt-1" />
@@ -66,7 +66,7 @@ export default function ContactSection() {
         </div>
         <div className="mt-12 md:mt-16">
            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.3553139929386!2d-49.2824598248502!3d-16.709113984066967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef187c5af97ff%3A0xb9e135695502383b!2sCP%20Marketing%20Digital%20e%20Podcast!5e0!3m2!1spt-BR!2sbr!4v1754332215763!5m2!1spt-BR!2sbr" 
+                src="https://www.google.com/maps/embed?pb=!1m18!m12!1m3!1d3821.3553139929386!2d-49.2824598248502!3d-16.709113984066967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef187c5af97ff%3A0xb9e135695502383b!2sCP%20Marketing%20Digital%20e%20Podcast!5e0!3m2!1spt-BR!2sbr!4v1754332215763!5m2!1spt-BR!2sbr" 
                 width="100%" 
                 height="300"
                 style={{border:0}} 
