@@ -8,7 +8,7 @@ export default function Footer() {
           © 2022 CP Marketing. Todos os direitos reservados.
         </p>
         <p className="text-sm text-center">
-          Criado por <Link href="#" className="underline">CP Marketing</Link>
+          Criado por <Link href="/links" className="underline">CP Marketing</Link>
         </p>
       </div>
     </footer>
