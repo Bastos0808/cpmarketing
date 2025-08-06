@@ -3,18 +3,25 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Instagram, Youtube, MessageCircle, Globe, Podcast, Mail } from "lucide-react";
+import { Instagram, Youtube, MessageCircle, Globe, Podcast, Mail, MapPin } from "lucide-react";
 import WarpSpeedBackground from "./warp-speed-background";
 import { useSearchParams } from 'next/navigation';
 import { useMemo } from "react";
 
 export default function LinksPage() {
     const searchParams = useSearchParams();
-    const paramsString = searchParams.toString();
+
+    const params = useMemo(() => {
+        const newParams = new URLSearchParams(searchParams.toString());
+        newParams.set('utm_source', 'instagram');
+        newParams.set('utm_medium', 'bio');
+        return newParams.toString();
+    }, [searchParams]);
+
 
     const links = useMemo(() => [
         {
-            href: `/contato${paramsString ? `?${paramsString}` : ''}`,
+            href: `/contato?${params}`,
             text: "Agende sua consultoria gratuita",
             icon: <Mail className="h-5 w-5" />,
         },
@@ -34,16 +41,21 @@ export default function LinksPage() {
             icon: <MessageCircle className="h-5 w-5" />,
         },
         {
-            href: `/${paramsString ? `?${paramsString}` : ''}`,
+            href: `/?${params}`,
             text: "Nosso Site",
             icon: <Globe className="h-5 w-5" />,
         },
         {
-            href: `/podcast${paramsString ? `?${paramsString}` : ''}`,
+            href: `/podcast?${params}`,
             text: "Estúdio de Podcast",
             icon: <Podcast className="h-5 w-5" />,
         },
-    ], [paramsString]);
+        {
+            href: "https://www.google.com/maps/search/?api=1&query=CP+Marketing+Digital+e+Podcast",
+            text: "Localização",
+            icon: <MapPin className="h-5 w-5" />,
+        },
+    ], [params]);
 
     return (
         <div className="relative flex flex-col items-center justify-center min-h-screen text-foreground p-4 overflow-hidden">
