@@ -38,17 +38,18 @@ const ModernNav = () => {
     <div className="buttons-container">
       <ul>
         {navItems.map((item, index) => (
-          <Link key={item.label} href={item.href} passHref legacyBehavior>
             <li
+              key={item.label}
               className={index === activeIndex ? 'active' : ''}
               onClick={() => handleItemClick(index)}
               aria-label={item.label}
             >
-              <span className={index === activeIndex ? 'active-text' : ''}>
-                {item.label}
-              </span>
+              <Link href={item.href} className="w-full h-full flex items-center justify-center">
+                  <span className={index === activeIndex ? 'active-text' : ''}>
+                    {item.label}
+                  </span>
+              </Link>
             </li>
-          </Link>
         ))}
       </ul>
     </div>
