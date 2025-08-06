@@ -5,17 +5,14 @@ import Link from "next/link";
 
 const methods = [
     {
-        step: "(001)",
         title: "Plano de Marketing",
         description: "Estratégias, ações e objetivos são componentes importantes de um plano de marketing.",
     },
     {
-        step: "(002)",
         title: "Execução do Trabalho",
         description: "Implementação da estratégia.",
     },
     {
-        step: "(003)",
         title: "Crescimento & Escala",
         description: "Escalada e Expansão: Aumentando a produção e ampliando a oferta de serviços e produtos.",
     }
@@ -29,8 +26,8 @@ export default function MethodSection() {
                     <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">Conheça nosso método</h2>
                  </div>
                  <div className="space-y-4">
-                     {methods.map((method) => (
-                        <div key={method.step} className="border border-border rounded-lg p-4 md:p-6">
+                     {methods.map((method, index) => (
+                        <div key={index} className="border border-border rounded-lg p-4 md:p-6">
                             <div className="grid md:grid-cols-3 gap-4 md:gap-8 items-center">
                                 <div className="flex items-center gap-2">
                                      <h3 className="text-lg md:text-xl font-semibold flex items-center gap-2">
@@ -39,7 +36,6 @@ export default function MethodSection() {
                                 </div>
                                 <div className="md:col-span-2 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
                                      <p className="text-muted-foreground text-sm md:text-base">{method.description}</p>
-                                     <span className="text-muted-foreground font-mono text-sm md:text-lg">{method.step}</span>
                                 </div>
                             </div>
                         </div>
