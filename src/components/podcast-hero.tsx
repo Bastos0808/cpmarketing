@@ -17,7 +17,7 @@ export default function PodcastHero() {
               playsInline
               className="absolute top-0 left-0 w-full h-full object-cover"
             >
-              <source src="/video-do-estudio.mp4" type="video/mp4" />
+              <source src="https://storage.googleapis.com/builder-9b63de63-2252-4299-9ed4-73895e636142/video-do-estudio.mp4" type="video/mp4" />
               Seu navegador não suporta a tag de vídeo.
             </video>
           </div>
