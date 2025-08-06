@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -12,16 +12,23 @@ const navItems = [
 
 const ModernNav = () => {
   const pathname = usePathname();
-  
-  const getInitialActiveIndex = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
     // Exact match for homepage
-    if (pathname === '/') return 0;
+    if (pathname === '/') {
+        setActiveIndex(0);
+        return;
+    }
     // For other pages, find the one that starts with the href
     const activeIndex = navItems.findIndex(item => item.href !== '/' && pathname.startsWith(item.href));
-    return activeIndex === -1 ? 0 : activeIndex;
-  }
-
-  const [activeIndex, setActiveIndex] = useState(getInitialActiveIndex());
+    
+    if (activeIndex !== -1) {
+        setActiveIndex(activeIndex);
+    } else {
+        setActiveIndex(0); // Default to home if no match
+    }
+  }, [pathname]);
 
   const handleItemClick = (index: number) => {
     setActiveIndex(index);
