@@ -36,7 +36,7 @@ export default function AboutSection() {
                                     <Image src="https://placehold.co/300x500.png" alt="Podcast Studio" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="podcast studio" />
                                 </CarouselItem>
                                 <CarouselItem>
-                                    <Image src="https://placehold.co/300x500.png" alt="Marketing Digital" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="digital marketing" />
+                                    <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%2014.png?alt=media&token=371424d1-4fde-4a10-b8f8-d940fbb31b55" alt="Marketing Digital" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="digital marketing" />
                                 </CarouselItem>
                             </CarouselContent>
                         </Carousel>
