@@ -21,7 +21,7 @@ export default function PodcastStudio() {
                         </Button>
                     </div>
                     <div>
-                        <Image src="https://placehold.co/600x400.png" alt="Estúdio de Podcast" width={600} height={400} className="rounded-lg" data-ai-hint="podcast studio" />
+                        <Image src="/PODCAST 01.png" alt="Estúdio de Podcast" width={600} height={400} className="rounded-lg" data-ai-hint="podcast studio" />
                     </div>
                 </div>
 
