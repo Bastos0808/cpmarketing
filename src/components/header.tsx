@@ -3,7 +3,7 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import ModernNav from "./circular-nav"
+import ModernNav from "./modern-nav"
 
 export default function Header() {
   return (

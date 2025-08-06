@@ -87,9 +87,9 @@
 /* Modern Nav Styles */
 .buttons-container {
   position: relative;
-  width: 395px;
-  height: 80px;
-  border-radius: 45px;
+  width: 350px;
+  height: 60px;
+  border-radius: 30px;
   background: #151515;
   box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.5);
 }
@@ -101,6 +101,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 .buttons-container li {
@@ -108,8 +110,8 @@
   align-items: center;
   justify-content: center;
   margin: 1px;
-  height: 70px;
-  width: 95px;
+  height: 50px;
+  width: 110px;
   background: #202020;
   border-top: 1px solid #353535;
   box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
@@ -117,13 +119,13 @@
 }
 
 .buttons-container li:first-of-type {
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .buttons-container li:last-of-type {
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .buttons-container li:hover {
@@ -134,7 +136,7 @@
   display: inline-block;
   color: gray;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 1rem;
   transition: all .5s;
 }
 
