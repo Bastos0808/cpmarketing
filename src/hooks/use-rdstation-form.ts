@@ -1,4 +1,3 @@
-// src/hooks/use-rdstation-form.ts
 'use client';
 
 import { useEffect, useCallback } from 'react';
@@ -24,6 +23,15 @@ function loadScript(callback: () => void) {
 
   subscribers.push(callback);
 
+  if (document.getElementById(SCRIPT_ID)) {
+    if (window.RDStationForms) {
+        isScriptLoaded = true;
+        isScriptLoading = false;
+        subscribers.forEach((cb) => cb());
+        return;
+    }
+  }
+
   if (!isScriptLoading) {
     isScriptLoading = true;
     const script = document.createElement('script');
@@ -35,6 +43,9 @@ function loadScript(callback: () => void) {
       isScriptLoading = false;
       subscribers.forEach((cb) => cb());
     };
+    script.onerror = () => {
+      isScriptLoading = false;
+    }
     document.body.appendChild(script);
   }
 }
@@ -43,8 +54,8 @@ export function useRdStationForm(formId: string) {
   const initializeForm = useCallback(() => {
     const formContainer = document.getElementById(formId);
 
-    if (formContainer && window.RDStationForms) {
-      // Clean up previous form instances in this specific container
+    if (formContainer && typeof window.RDStationForms !== 'undefined') {
+      // Limpa o contêiner para evitar duplicação em re-renderizações
       formContainer.innerHTML = '';
       new window.RDStationForms(formId, 'null').createForm();
     }
@@ -53,11 +64,8 @@ export function useRdStationForm(formId: string) {
   useEffect(() => {
     if (typeof window === 'undefined') return;
     
+    // O script é carregado e, no callback, o formulário é inicializado.
     loadScript(initializeForm);
 
   }, [initializeForm]);
-
-  return {
-    rerender: initializeForm
-  };
 }
