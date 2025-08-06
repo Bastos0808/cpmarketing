@@ -24,8 +24,8 @@ export default function PodcastCTA() {
                         </div>
                     </div>
                     <div className="flex flex-col items-center justify-center">
-                        <Image src="/FOTO FB.png" alt="Carlos, CEO da CP Marketing" width={400} height={400} className="rounded-lg" data-ai-hint="man portrait" />
-                         <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg -mt-8">
+                        <Image src="/FOTO FB.png" alt="Carlos, CEO da CP Marketing" width={500} height={500} className="rounded-lg" data-ai-hint="man portrait" />
+                         <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg -mt-8">
                             <Link href="#contact">Entre em contato</Link>
                         </Button>
                     </div>
