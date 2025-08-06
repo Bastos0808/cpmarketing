@@ -17,7 +17,7 @@ export default function PodcastGuestPage() {
             <div className="absolute inset-0 bg-grid-orange-900/10 [mask-image:linear-gradient(to_bottom,white_5%,transparent_50%)]"></div>
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12">
-                    <div className="flex flex-col justify-between h-full">
+                    <div className="flex flex-col justify-between h-full space-y-8">
                         <div className="space-y-6">
                             <Badge variant="outline" className="w-fit border-primary text-primary">PARTICIPAÇÃO GRATUITA</Badge>
                             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
@@ -39,19 +39,16 @@ export default function PodcastGuestPage() {
                                 align: "start",
                                 loop: true,
                             }}
-                            className="w-full max-w-lg mt-8"
+                            className="w-full max-w-lg"
                             onMouseEnter={plugin.current.stop}
                             onMouseLeave={plugin.current.reset}
                             >
                             <CarouselContent>
-                                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                                     <Image src="/PODCAST 01.png" alt="Estúdio de Podcast da CP Marketing" width={400} height={400} className="rounded-lg object-cover aspect-square" data-ai-hint="podcast studio" />
+                                <CarouselItem>
+                                     <Image src="/PODCAST 01.png" alt="Estúdio de Podcast da CP Marketing" width={500} height={500} className="rounded-lg object-cover aspect-video" data-ai-hint="podcast studio" />
                                 </CarouselItem>
-                                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                                     <Image src="/PODCAST 02.png" alt="Detalhe do estúdio de podcast" width={400} height={400} className="rounded-lg object-cover aspect-square" data-ai-hint="podcast studio detail" />
-                                </CarouselItem>
-                                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                                     <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%2015.png?alt=media&token=0fa2d2d4-2506-4936-97b9-0d52aa146aed" alt="Equipamentos de podcast" width={400} height={400} className="rounded-lg object-cover aspect-square" data-ai-hint="podcast equipment" />
+                                 <CarouselItem>
+                                     <Image src="/PODCAST 02.png" alt="Detalhe do estúdio de podcast" width={500} height={500} className="rounded-lg object-cover aspect-video" data-ai-hint="podcast studio detail" />
                                 </CarouselItem>
                             </CarouselContent>
                         </Carousel>
