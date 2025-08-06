@@ -5,9 +5,9 @@ export default function ContactPage() {
         <section className="w-full py-12 md:py-24 lg:py-32 bg-background relative">
             <div className="absolute inset-0 bg-grid-orange-900/10 [mask-image:linear-gradient(to_bottom,white_5%,transparent_50%)]"></div>
             <div className="container mx-auto px-4 md:px-6 relative z-10">
-                <div className="grid lg:grid-cols-5 gap-12 items-start">
-                    <div className="flex flex-col justify-center space-y-6 lg:col-span-2 h-full">
-                        <div className="flex-grow space-y-4">
+                <div className="grid lg:grid-cols-5 gap-12">
+                    <div className="flex flex-col justify-start space-y-6 lg:col-span-2 h-full">
+                        <div className="space-y-4">
                              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
                                 Consultoria Gratuita
                             </h1>
@@ -18,10 +18,10 @@ export default function ContactPage() {
                             <p className="max-w-[600px] text-gray-300 md:text-lg text-sm">
                                 Agende uma consultoria gratuita com nossos especialistas e receba um diagnóstico completo. Vamos identificar as oportunidades, corrigir as falhas e construir um plano de ação que gera resultados reais.
                             </p>
+                             <p className="font-bold text-primary text-lg pt-4">
+                               Preencha o formulário e dê o primeiro passo para transformar sua presença online.
+                            </p>
                         </div>
-                         <p className="font-bold text-primary text-lg pt-4">
-                           Preencha o formulário e dê o primeiro passo para transformar sua presença online.
-                        </p>
                     </div>
                     <div className="lg:col-span-3">
                         <RdstationForm />
