@@ -1,6 +1,5 @@
 'use client';
 
-import Script from 'next/script';
 import { useEffect } from 'react';
 
 declare global {
@@ -14,31 +13,43 @@ const RDSTATION_FORM_ID = 'form-contato-site-cp-e16fa69f5771610a50c5';
 export default function RdstationForm() {
   useEffect(() => {
     const initializeForm = () => {
-      if (window.RDStationForms) {
-        new window.RDStationForms(RDSTATION_FORM_ID, 'null').createForm();
+      // Ensure the container exists and RDStationForms is available
+      if (document.getElementById(RDSTATION_FORM_ID) && window.RDStationForms) {
+        // Check if a form has already been created in this container
+        const formContainer = document.getElementById(RDSTATION_FORM_ID);
+        if (formContainer && formContainer.childElementCount === 0) {
+            new window.RDStationForms(RDSTATION_FORM_ID, 'null').createForm();
+        }
       }
     };
 
-    // If script is already loaded, initialize immediately.
-    if (window.RDStationForms) {
+    const scriptId = 'rdstation-script';
+    let script = document.getElementById(scriptId) as HTMLScriptElement | null;
+
+    if (!script) {
+      script = document.createElement('script');
+      script.id = scriptId;
+      script.src = 'https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js';
+      script.async = true;
+      script.onload = initializeForm;
+      document.body.appendChild(script);
+    } else if (window.RDStationForms) {
+      // If script is already there, just try to initialize the form
       initializeForm();
-    } 
-    // Otherwise, the `onLoad` on the Script component will handle it.
+    } else {
+      // If script is there but might be loading, add an event listener
+      script.addEventListener('load', initializeForm);
+    }
+
+    // Cleanup: remove the event listener when the component unmounts
+    return () => {
+      if (script) {
+        script.removeEventListener('load', initializeForm);
+      }
+    };
   }, []);
 
   return (
-    <>
-      <div role="main" id={RDSTATION_FORM_ID}></div>
-      <Script
-        type="text/javascript"
-        src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"
-        strategy="lazyOnload"
-        onLoad={() => {
-          if (window.RDStationForms) {
-            new window.RDStationForms(RDSTATION_FORM_ID, 'null').createForm();
-          }
-        }}
-      />
-    </>
+    <div role="main" id={RDSTATION_FORM_ID}></div>
   );
 }
