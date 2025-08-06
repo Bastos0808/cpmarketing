@@ -28,6 +28,7 @@ function loadScript(callback: () => void) {
         isScriptLoaded = true;
         isScriptLoading = false;
         subscribers.forEach((cb) => cb());
+        subscribers.length = 0; // Clear subscribers
         return;
     }
   }
@@ -42,6 +43,7 @@ function loadScript(callback: () => void) {
       isScriptLoaded = true;
       isScriptLoading = false;
       subscribers.forEach((cb) => cb());
+      subscribers.length = 0; // Clear subscribers
     };
     script.onerror = () => {
       isScriptLoading = false;
