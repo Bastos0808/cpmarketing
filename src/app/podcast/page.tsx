@@ -10,8 +10,8 @@ export default function PodcastPage() {
       <Header />
       <main className="flex-grow">
         <PodcastHero />
-        <PodcastStudio />
         <PodcastCTA />
+        <PodcastStudio />
       </main>
       <Footer />
     </div>
