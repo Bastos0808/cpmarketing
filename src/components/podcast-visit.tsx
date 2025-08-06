@@ -17,7 +17,7 @@ export default function PodcastVisit() {
                         <p className="text-white/80">
                             Na CP Marketing, você encontra um estúdio de podcast completo, com estrutura profissional para gravações ou transmissões ao vivo. Oferecemos áudio cristalino, com microfones de alta performance e tratamento acústico, e vídeo em altíssima qualidade, com câmeras e iluminação profissional.
                         </p>
-                        <div className="relative flex flex-col items-center">
+                        <div className="flex flex-col items-center">
                             <Image 
                                 src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/FOTO%20GB.png?alt=media&token=d82734eb-7a58-4416-82de-fbe8be66ef35" 
                                 alt="Homem apontando para baixo" 
@@ -26,7 +26,7 @@ export default function PodcastVisit() {
                                 className="rounded-lg"
                                 data-ai-hint="man pointing" 
                             />
-                            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg -mt-8">
+                            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg mt-4">
                                 <Link href="#contato">ENTRE EM CONTATO AGORA</Link>
                             </Button>
                         </div>
