@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { Montserrat } from 'next/font/google';
 import Script from 'next/script';
+import { Analytics } from "@vercel/analytics/next"
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body className={`${montserrat.variable} font-body antialiased`}>
         {children}
         <Toaster />
+        <Analytics />
         <Script
           id="meta-pixel"
           strategy="afterInteractive"
