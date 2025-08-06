@@ -2,8 +2,7 @@
 
 import React, { useEffect } from 'react';
 
-// IMPORTANTE: Substitua este ID pelo ID real do seu novo formulário do RD Station.
-const GUEST_FORM_ID = 'form-podcast-guest-a1b2c3d4e5f6g7h8i9j0';
+const GUEST_FORM_ID = 'form-prospec-podcast-site-cp-51ad21433cf511747405';
 
 const PodcastGuestRdstationForm = () => {
   useEffect(() => {
@@ -11,7 +10,9 @@ const PodcastGuestRdstationForm = () => {
     if (!formContainer) return;
 
     // Limpa o contêiner para evitar duplicação em navegações do lado do cliente
-    formContainer.innerHTML = '';
+    if (formContainer.childElementCount > 0) {
+        return;
+    }
 
     const formDiv = document.createElement('div');
     formDiv.setAttribute('role', 'main');
@@ -37,13 +38,6 @@ const PodcastGuestRdstationForm = () => {
         // Se o script já existe, apenas inicializa o formulário
         initializeForm();
     }
-
-    // Função de limpeza para quando o componente for desmontado
-    return () => {
-        if (formContainer) {
-            formContainer.innerHTML = '';
-        }
-    };
   }, []);
 
   return <div id="form-container-guest" />;
