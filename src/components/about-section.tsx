@@ -35,6 +35,9 @@ export default function AboutSection() {
                                 <CarouselItem>
                                     <Image src="https://placehold.co/300x500.png" alt="Podcast Studio" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="podcast studio" />
                                 </CarouselItem>
+                                <CarouselItem>
+                                    <Image src="https://placehold.co/300x500.png" alt="Marketing Digital" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="digital marketing" />
+                                </CarouselItem>
                             </CarouselContent>
                         </Carousel>
                     </div>
