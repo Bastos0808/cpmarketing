@@ -11,36 +11,20 @@ export default function ContactPage() {
                         Seu marketing está dando prejuízo? Nós apontamos a causa e a solução
                     </h2>
                 </div>
-                <div className="grid lg:grid-cols-5 gap-12">
-                    <div className="flex flex-col justify-between space-y-6 lg:col-span-2 h-full">
-                        <div className="space-y-4">
-                             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
-                                Consultoria Gratuita
-                            </h1>
-                            <p className="text-xl font-semibold text-white">Destrave o Potencial do seu Negócio Agora.</p>
-                            <p className="max-w-[600px] text-gray-300 md:text-lg text-sm">
-                                Sua marca tem uma história única, mas ela está sendo ouvida? Muitos negócios com grande potencial ficam para trás por não terem uma estratégia de marketing digital clara. Não deixe a incerteza e a falta de direção impedirem seu crescimento.
+                <div className="grid lg:grid-cols-5 gap-12 items-center">
+                    <div className="flex flex-col justify-center items-center space-y-6 lg:col-span-2 h-full">
+                        <Image
+                            src="/FOTO M.png?v=2"
+                            alt="Mulher apontando para o formulário"
+                            width={400}
+                            height={400}
+                            className="w-full max-w-sm h-auto object-contain"
+                            data-ai-hint="woman pointing"
+                        />
+                        <div className="border border-primary/50 rounded-lg p-4 text-center max-w-sm">
+                            <p className="font-bold text-primary text-lg">
+                               Preencha o formulário e dê o primeiro passo para transformar sua presença online.
                             </p>
-                            <p className="max-w-[600px] text-gray-300 md:text-lg text-sm">
-                                Agende uma consultoria gratuita com nossos especialistas e receba um diagnóstico completo. Vamos identificar as oportunidades, corrigir as falhas e construir um plano de ação que gera resultados reais.
-                            </p>
-                        </div>
-                        <div className="mt-8">
-                             <div className="border border-primary/50 rounded-lg p-4 text-center">
-                                <p className="font-bold text-primary text-lg">
-                                   Preencha o formulário e dê o primeiro passo para transformar sua presença online.
-                                </p>
-                             </div>
-                            <div className="mt-8">
-                                <Image 
-                                    src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%202.png?alt=media&token=331337e0-2090-483e-9e96-22f900818663"
-                                    alt="Marketing Process"
-                                    width={500}
-                                    height={300}
-                                    className="w-full h-auto object-contain"
-                                    data-ai-hint="marketing process diagram"
-                                />
-                            </div>
                         </div>
                     </div>
                     <div className="lg:col-span-3">
