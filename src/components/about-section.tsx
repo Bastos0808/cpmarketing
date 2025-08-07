@@ -24,10 +24,10 @@ export default function AboutSection() {
                         >
                             <CarouselContent>
                                 <CarouselItem>
-                                    <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/EQUIPE%2001.PNG?alt=media&token=5ff731bf-e316-4f7d-88ba-e5243949b053" alt="Equipe CP Marketing 1" width={500} height={300} className="rounded-lg relative z-10 object-cover aspect-video" data-ai-hint="marketing team" />
+                                    <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/EQUIPE%2001.PNG?alt=media&token=5ff731bf-e316-4f7d-88ba-e5243949b053" alt="Equipe CP Marketing 1" width={600} height={400} className="rounded-lg relative z-10 object-cover aspect-video" data-ai-hint="marketing team" />
                                 </CarouselItem>
                                 <CarouselItem>
-                                    <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%2023%20(1).png?alt=media&token=5da5cc06-af5d-4789-9d5a-439ffc91dedf" alt="Equipe CP Marketing 2" width={500} height={300} className="rounded-lg relative z-10 object-cover aspect-video" data-ai-hint="marketing team" />
+                                    <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%2023%20(1).png?alt=media&token=5da5cc06-af5d-4789-9d5a-439ffc91dedf" alt="Equipe CP Marketing 2" width={600} height={400} className="rounded-lg relative z-10 object-cover aspect-video" data-ai-hint="marketing team" />
                                 </CarouselItem>
                             </CarouselContent>
                         </Carousel>
