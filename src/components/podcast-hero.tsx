@@ -34,8 +34,8 @@ export default function PodcastHero() {
             </video>
           </div>
         </div>
-        <div className="mt-8 text-center text-muted-foreground max-w-5xl mx-auto">
-          <p>Grave seu conteúdo e deixe toda a parte técnica e operacional com nosso time, crie agora seu podcast</p>
+        <div className="mt-8 text-center max-w-5xl mx-auto">
+          <p className="text-lg font-semibold text-primary">Grave seu conteúdo e deixe toda a parte técnica e operacional com nosso time, crie agora seu podcast</p>
         </div>
       </div>
     </section>
