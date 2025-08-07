@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { InteractiveCard } from "./interactive-card";
+import './interactive-card.css';
 
 const partners = [
   { 
@@ -37,18 +39,21 @@ export default function PartnersSection() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {partners.map((partner, index) => (
-            <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-6 flex flex-col justify-start items-center text-center backdrop-blur-sm transition-all duration-300 hover:bg-white/10 h-full">
-              <div className="relative h-20 w-40 mb-4">
-                <Image
-                  src={partner.src}
-                  alt={partner.name}
-                  fill
-                  className="object-contain filter brightness-0 invert"
-                />
+            <InteractiveCard key={index}>
+              <div className="card-interactive bg-white/5 border border-white/10 rounded-lg p-6 flex flex-col justify-start items-center text-center backdrop-blur-sm transition-all duration-300 hover:bg-white/10 h-full">
+                <div className="glow"></div>
+                <div className="relative h-20 w-40 mb-4">
+                  <Image
+                    src={partner.src}
+                    alt={partner.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <h3 className="font-semibold text-primary-foreground mb-2">{partner.name}</h3>
+                <p className="text-muted-foreground text-sm flex-grow">{partner.description}</p>
               </div>
-              <h3 className="font-semibold text-primary-foreground mb-2">{partner.name}</h3>
-              <p className="text-muted-foreground text-sm flex-grow">{partner.description}</p>
-            </div>
+            </InteractiveCard>
           ))}
         </div>
       </div>
