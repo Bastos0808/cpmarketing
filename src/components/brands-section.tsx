@@ -20,6 +20,7 @@ const brands = [
   { name: "Body & Science", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FBody%20%26%20Science%20(2).png?alt=media&token=aaa63d65-3727-4dc1-a22d-51da10d5bcec" },
   { name: "Cliente 15", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FLOGO%20HORIZONTAL%20ALINE%20(2).png?alt=media&token=4bc02b22-06f4-45cb-a3e6-5b5831d4d2dc" },
   { name: "Cliente 16", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2Flogo-crtr09%20(1).png?alt=media&token=35edf89c-0f8d-46c1-b348-ac13538e6ee1" },
+  { name: "Experts", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FLogo%20Experts%20PNG.png?alt=media&token=5a266e47-7512-4cda-9798-1599f7e9ff64" },
 ];
 
 const duplicatedBrands = [...brands, ...brands];
