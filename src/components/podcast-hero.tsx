@@ -35,7 +35,7 @@ export default function PodcastHero() {
           </div>
         </div>
         <div className="mt-8 text-center max-w-5xl mx-auto">
-          <p className="text-lg font-semibold text-primary">Grave seu conteúdo e deixe toda a parte técnica e operacional com nosso time, crie agora seu podcast</p>
+          <p className="text-xl font-bold text-primary tracking-wide">Grave seu conteúdo e deixe toda a parte técnica e operacional com nosso time, crie agora seu podcast</p>
         </div>
       </div>
     </section>
