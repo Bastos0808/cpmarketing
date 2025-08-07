@@ -22,6 +22,7 @@ const brands = [
   { name: "Cliente 16", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2Flogo-crtr09%20(1).png?alt=media&token=35edf89c-0f8d-46c1-b348-ac13538e6ee1" },
   { name: "Experts", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FLogo%20Experts%20PNG.png?alt=media&token=5a266e47-7512-4cda-9798-1599f7e9ff64" },
   { name: "Cliente 18", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FDesign%20sem%20nome%20-%202025-02-06T111338.134.png?alt=media&token=d01cd249-54e2-4fe1-aa43-23547967b756" },
+  { name: "Cliente 19", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FDesign%20sem%20nome%20(8).png?alt=media&token=b70bc13f-1e04-4199-87d6-632abe52d821" },
 ];
 
 const duplicatedBrands = [...brands, ...brands];
