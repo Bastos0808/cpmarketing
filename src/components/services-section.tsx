@@ -52,7 +52,7 @@ export default function ServicesSection() {
         <div className="relative pt-48 md:pt-64 lg:pt-96">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[200px] sm:max-w-xs md:max-w-sm lg:max-w-lg h-auto">
                 <Image 
-                    src="/FOTO M.png?v=2" 
+                    src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%209.png?alt=media&token=b0b35df1-7e09-436b-9650-05b850f11864" 
                     alt="Woman pointing down" 
                     width={500} 
                     height={500} 
