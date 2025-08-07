@@ -28,6 +28,7 @@ const PodcastGuestRdstationForm = () => {
       script = document.createElement('script');
       script.type = 'text/javascript';
       script.src = scriptUrl;
+      script.async = true;
       script.onload = initializeForm;
       document.body.appendChild(script);
     } else {
