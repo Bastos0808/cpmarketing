@@ -37,7 +37,7 @@ export default function ContactSection() {
               <span className="text-muted-foreground text-sm md:text-base">comercial@cpmarketing.com.br</span>
             </div>
             <div className="flex items-start gap-4">
-              <MapPin className="h-5 w-5 text-primary mt-1" />
+              <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
               <span className="text-muted-foreground text-sm md:text-base">
                 Rua 239 Quadra 532 Lote 19 - Jardim América - Goiânia - Próximo ao Ginasio e ao lado do Condomínio Muy Bueno
               </span>
