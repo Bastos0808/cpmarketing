@@ -1,3 +1,4 @@
+import Image from "next/image";
 import RdstationForm from "./rdstation-form";
 
 export default function ContactPage() {
@@ -11,7 +12,7 @@ export default function ContactPage() {
                     </h2>
                 </div>
                 <div className="grid lg:grid-cols-5 gap-12">
-                    <div className="flex flex-col justify-start space-y-6 lg:col-span-2 h-full">
+                    <div className="flex flex-col justify-between space-y-6 lg:col-span-2 h-full">
                         <div className="space-y-4">
                              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
                                 Consultoria Gratuita
@@ -26,6 +27,16 @@ export default function ContactPage() {
                              <p className="font-bold text-primary text-lg pt-4">
                                Preencha o formulário e dê o primeiro passo para transformar sua presença online.
                             </p>
+                        </div>
+                        <div className="mt-8">
+                            <Image 
+                                src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%202.png?alt=media&token=331337e0-2090-483e-9e96-22f900818663"
+                                alt="Marketing Process"
+                                width={500}
+                                height={300}
+                                className="w-full h-auto object-contain"
+                                data-ai-hint="marketing process diagram"
+                            />
                         </div>
                     </div>
                     <div className="lg:col-span-3">
