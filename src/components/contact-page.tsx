@@ -11,8 +11,18 @@ export default function ContactPage() {
                         Seu marketing está dando prejuízo? Nós apontamos a causa e a solução
                     </h2>
                 </div>
-                <div className="grid lg:grid-cols-5 gap-12 items-center">
-                    <div className="flex flex-col justify-center items-center space-y-6 lg:col-span-2 h-full">
+                <div className="grid lg:grid-cols-5 gap-12 items-start">
+                    <div className="flex flex-col justify-start items-center space-y-6 lg:col-span-2 h-full">
+                        <div className="space-y-4 text-left w-full">
+                            <h1 className="text-3xl font-bold text-primary">Consultoria Gratuita</h1>
+                            <p className="text-xl font-semibold text-white">Destrave o Potencial do seu Negócio Agora.</p>
+                            <p className="text-muted-foreground">
+                                Sua marca tem uma história única, mas ela está sendo ouvida? Muitos negócios com grande potencial ficam para trás por não terem uma estratégia de marketing digital clara. Não deixe a incerteza e a falta de direção impedirem seu crescimento.
+                            </p>
+                            <p className="text-muted-foreground">
+                                Agende uma consultoria gratuita com nossos especialistas e receba um diagnóstico completo. Vamos identificar as oportunidades, corrigir as falhas e construir um plano de ação que gera resultados reais.
+                            </p>
+                        </div>
                         <Image
                             src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%202.png?alt=media&token=331337e0-2090-483e-9e96-22f900818663"
                             alt="Mulher apontando para o formulário"
