@@ -27,7 +27,7 @@ export default function PartnersSection() {
                   src={partner.src}
                   alt={partner.name}
                   fill
-                  className="object-contain"
+                  className="object-contain mix-blend-multiply dark:mix-blend-lighten"
                 />
               </div>
             </div>
