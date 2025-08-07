@@ -11,7 +11,7 @@ export default function PodcastPage() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow pt-28">
         <PodcastHero />
         <PodcastCTA />
         <PodcastStudio />
