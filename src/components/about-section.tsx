@@ -30,13 +30,10 @@ export default function AboutSection() {
                         >
                             <CarouselContent>
                                 <CarouselItem>
-                                    <Image src="/FOTO CAIO.png?v=3" alt="Carlos C" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="man portrait" />
+                                    <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/EQUIPE%2001.PNG?alt=media&token=5ff731bf-e316-4f7d-88ba-e5243949b053" alt="Equipe CP Marketing 1" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="marketing team" />
                                 </CarouselItem>
                                 <CarouselItem>
-                                    <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/EQUIPE%2002.PNG?alt=media&token=00a73e2a-08c9-4452-a833-41f4247e8fc4" alt="Podcast Studio" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="podcast studio" />
-                                </CarouselItem>
-                                <CarouselItem>
-                                    <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%2014.png?alt=media&token=371424d1-4fde-4a10-b8f8-d940fbb31b55" alt="Marketing Digital" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="digital marketing" />
+                                    <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/EQUIPE%2002.PNG?alt=media&token=00a73e2a-08c9-4452-a833-41f4247e8fc4" alt="Equipe CP Marketing 2" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="marketing team" />
                                 </CarouselItem>
                             </CarouselContent>
                         </Carousel>
