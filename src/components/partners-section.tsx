@@ -21,8 +21,8 @@ export default function PartnersSection() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
           {partners.map((partner, index) => (
-            <div key={index} className="flex justify-center">
-              <div className="relative h-20 w-40 transition-all duration-300">
+            <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-6 flex justify-center items-center backdrop-blur-sm transition-all duration-300 hover:bg-white/10">
+              <div className="relative h-20 w-40">
                 <Image
                   src={partner.src}
                   alt={partner.name}
