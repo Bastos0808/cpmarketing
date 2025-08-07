@@ -14,7 +14,7 @@ export default function ContactPage() {
                 <div className="grid lg:grid-cols-5 gap-12 items-center">
                     <div className="flex flex-col justify-center items-center space-y-6 lg:col-span-2 h-full">
                         <Image
-                            src="/FOTO M.png?v=2"
+                            src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%202.png?alt=media&token=331337e0-2090-483e-9e96-22f900818663"
                             alt="Mulher apontando para o formulário"
                             width={400}
                             height={400}
