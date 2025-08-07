@@ -24,19 +24,23 @@ export default function ContactPage() {
                             <p className="max-w-[600px] text-gray-300 md:text-lg text-sm">
                                 Agende uma consultoria gratuita com nossos especialistas e receba um diagnóstico completo. Vamos identificar as oportunidades, corrigir as falhas e construir um plano de ação que gera resultados reais.
                             </p>
-                             <p className="font-bold text-primary text-lg pt-4">
-                               Preencha o formulário e dê o primeiro passo para transformar sua presença online.
-                            </p>
                         </div>
                         <div className="mt-8">
-                            <Image 
-                                src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%202.png?alt=media&token=331337e0-2090-483e-9e96-22f900818663"
-                                alt="Marketing Process"
-                                width={500}
-                                height={300}
-                                className="w-full h-auto object-contain"
-                                data-ai-hint="marketing process diagram"
-                            />
+                             <div className="border border-primary/50 rounded-lg p-4 text-center">
+                                <p className="font-bold text-primary text-lg">
+                                   Preencha o formulário e dê o primeiro passo para transformar sua presença online.
+                                </p>
+                             </div>
+                            <div className="mt-8">
+                                <Image 
+                                    src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%202.png?alt=media&token=331337e0-2090-483e-9e96-22f900818663"
+                                    alt="Marketing Process"
+                                    width={500}
+                                    height={300}
+                                    className="w-full h-auto object-contain"
+                                    data-ai-hint="marketing process diagram"
+                                />
+                            </div>
                         </div>
                     </div>
                     <div className="lg:col-span-3">
