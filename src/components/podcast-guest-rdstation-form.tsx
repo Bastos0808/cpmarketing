@@ -2,21 +2,17 @@
 
 import React, { useEffect } from 'react';
 
-const GUEST_FORM_ID = 'form-prospec-podcast-site-cp-51ad21433cf511747405';
-
 const PodcastGuestRdstationForm = () => {
   useEffect(() => {
     const formContainer = document.getElementById('form-container-guest');
     if (!formContainer) return;
 
     // Limpa o contêiner para evitar duplicação em navegações do lado do cliente
-    if (formContainer.childElementCount > 0) {
-        return;
-    }
+    formContainer.innerHTML = '';
 
     const formDiv = document.createElement('div');
     formDiv.setAttribute('role', 'main');
-    formDiv.id = GUEST_FORM_ID;
+    formDiv.id = 'form-prospec-podcast-site-cp-51ad21433cf511747405';
     formContainer.appendChild(formDiv);
 
     const scriptUrl = 'https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js';
@@ -24,7 +20,7 @@ const PodcastGuestRdstationForm = () => {
 
     const initializeForm = () => {
         if (window.RDStationForms) {
-            new window.RDStationForms(GUEST_FORM_ID, 'null').createForm();
+            new window.RDStationForms('form-prospec-podcast-site-cp-51ad21433cf511747405', 'null').createForm();
         }
     };
 
@@ -38,6 +34,13 @@ const PodcastGuestRdstationForm = () => {
         // Se o script já existe, apenas inicializa o formulário
         initializeForm();
     }
+    
+    // Função de limpeza
+    return () => {
+        if (formContainer) {
+            formContainer.innerHTML = '';
+        }
+    };
   }, []);
 
   return <div id="form-container-guest" />;
