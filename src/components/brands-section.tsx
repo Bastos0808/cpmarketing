@@ -13,6 +13,7 @@ const brands = [
   { name: "Cliente 7", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FLOGO-SEM-FUNDO.png_200x200.webp?alt=media&token=e3f4fe74-7df7-4002-8da4-b6b70b26ae73" },
   { name: "Cliente 8", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2Fpost.png?alt=media&token=48011c9e-6326-4350-82a6-128421c442c1" },
   { name: "Cliente 9", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FNutricionista%20Nutri%C3%A7%C3%A3o%20e%20Sa%C3%BAde%20Logo%20Minimalista%20%20(7).png?alt=media&token=903d1eab-4b7e-425f-be7b-84b0eec07739" },
+  { name: "Kaiza Marra", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FMarca_D'agua_Kaiza_Marra_Saude_e_Bem_estar_04.png?alt=media&token=8085002b-ffa4-4bc3-828c-5f6fcc10aabf" },
 ];
 
 const duplicatedBrands = [...brands, ...brands];
