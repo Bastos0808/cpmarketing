@@ -160,7 +160,7 @@
 
 .marquee {
   display: flex;
-  animation: marquee 40s linear infinite;
+  animation: marquee 30s linear infinite;
   will-change: transform;
 }
 

@@ -1,9 +1,9 @@
 "use client"
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-const brands = [
+const initialBrands = [
   { name: "Cliente 1", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2Flogo_200x200.png?alt=media&token=6f336712-7bc6-4e5a-a2ea-b625e4cd4a03" },
   { name: "Cliente 2", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2Fdownload_200x200.png?alt=media&token=273b244b-cfc7-45fd-95e5-4f1b9aa7ace7" },
   { name: "Laura Rocha", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FLaura-Rocha_Versao-02.png.webp?alt=media&token=eaf98e52-10ad-4c7f-966d-3764f5445b48" },
@@ -28,9 +28,23 @@ const brands = [
   { name: "Cliente 22", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2Fmarca%20d%C2%B4agua%20toda%20clara.png?alt=media&token=e22a5d31-7b11-440d-82a4-7d877e8a6690" },
 ];
 
-const duplicatedBrands = [...brands, ...brands];
-
 export default function BrandsSection() {
+  const [shuffledBrands, setShuffledBrands] = useState<(typeof initialBrands)>([]);
+
+  useEffect(() => {
+    const shuffleArray = (array: typeof initialBrands) => {
+      const newArray = [...array];
+      for (let i = newArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+      }
+      return newArray;
+    };
+    setShuffledBrands(shuffleArray(initialBrands));
+  }, []);
+
+  const duplicatedBrands = [...shuffledBrands, ...shuffledBrands];
+
   return (
     <section id="brands" className="py-12 md:py-24 lg:py-32 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
