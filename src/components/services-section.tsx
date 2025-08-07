@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Briefcase, Radio, TrendingUp, Users, Youtube, Award, PlayCircle, Settings, Globe } from "lucide-react"
+import { Briefcase, Radio, TrendingUp, Users, Youtube, Award, PlayCircle, Settings, Globe, Share2 } from "lucide-react"
 import Image from "next/image"
 import { InteractiveCard } from "./interactive-card";
 import './interactive-card.css';
@@ -29,9 +29,9 @@ const services = [
     icon: <Settings className="h-6 w-6 text-primary" />
   },
   {
-    title: "Gestão de canal no YouTube",
-    description: "Aumentar a visibilidade e sucesso do seu conteúdo no maior site de compartilhamento de vídeos do mundo.",
-    icon: <Youtube className="h-6 w-6 text-primary" />
+    title: "Integração de RD Station CRM e RD Station Marketing",
+    description: "Otimizamos seus processos de vendas e marketing com a integração completa das ferramentas da RD Station, unificando suas estratégias.",
+    icon: <Share2 className="h-6 w-6 text-primary" />
   },
   {
     title: "Criação de Sites",
@@ -67,7 +67,7 @@ export default function ServicesSection() {
                       <div className="glow"></div>
                       <div className="flex justify-start mb-4">
                           <div className="p-3 bg-white border-2 border-primary rounded-full inline-flex items-center justify-center">
-                            <div className="w-4 h-4 bg-primary transform rotate-45"></div>
+                            {service.icon}
                           </div>
                       </div>
                     <CardHeader className="p-0">
