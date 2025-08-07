@@ -17,7 +17,7 @@ const brands = [
 
 export default function BrandsSection() {
     const plugin = React.useRef(
-        Autoplay({ delay: 1, stopOnInteraction: false })
+        Autoplay({ delay: 1500, stopOnInteraction: false, stopOnMouseEnter: true })
     );
 
   return (
@@ -38,8 +38,6 @@ export default function BrandsSection() {
                 align: "start",
                 loop: true,
             }}
-            onMouseEnter={plugin.current.stop}
-            onMouseLeave={plugin.current.reset}
         >
             <CarouselContent className="-ml-4">
                  {brands.map((brand, index) => (
