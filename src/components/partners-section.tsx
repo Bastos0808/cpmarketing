@@ -27,7 +27,7 @@ export default function PartnersSection() {
                   src={partner.src}
                   alt={partner.name}
                   fill
-                  className="object-contain"
+                  className="object-contain filter brightness-0 invert"
                 />
               </div>
             </div>
