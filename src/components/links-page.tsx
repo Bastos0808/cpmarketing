@@ -67,10 +67,10 @@ export default function LinksPage() {
                 <div className="bg-black/50 border border-white/20 backdrop-blur-sm rounded-2xl p-6 md:p-8">
                     <div className="flex flex-col items-center space-y-6">
                         <Image
-                            src="/LOGO-CP-FULL-BRANCO.png"
+                            src="/LOGO REDONDA.svg"
                             alt="CP Marketing Logo"
-                            width={200}
-                            height={80}
+                            width={120}
+                            height={120}
                             className="object-contain"
                             data-ai-hint="logo"
                         />
