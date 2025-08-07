@@ -8,16 +8,19 @@ export default function VideoSection() {
                     <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl">Conheça-nos</h2>
                 </div>
                 <div className="mt-8 md:mt-12 mx-auto max-w-4xl">
-                    <div className="relative aspect-video bg-secondary rounded-lg overflow-hidden">
-                        <iframe 
+                    <div className="relative aspect-video bg-black rounded-lg overflow-hidden">
+                        <video 
                             className="absolute top-0 left-0 w-full h-full"
-                            src="https://www.youtube.com/embed/Exca6yP9uzY?autoplay=1&mute=1&loop=1&playlist=Exca6yP9uzY&vq=hd1080&controls=1&rel=0" 
-                            title="YouTube video player" 
-                            frameBorder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen>
-                        </iframe>
+                            src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/video%20tour%20horizontal%202.mp4?alt=media&token=a08f758c-201f-4048-a662-e918df1d659e" 
+                            title="Video tour do estúdio da CP Marketing"
+                            controls
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                        >
+                            Seu navegador não suporta a tag de vídeo.
+                        </video>
                     </div>
                 </div>
             </div>
