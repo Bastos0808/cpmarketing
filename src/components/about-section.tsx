@@ -33,7 +33,7 @@ export default function AboutSection() {
                                     <Image src="/FOTO CAIO.png?v=3" alt="Carlos C" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="man portrait" />
                                 </CarouselItem>
                                 <CarouselItem>
-                                    <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%2015.png?alt=media&token=0fa2d2d4-2506-4936-97b9-0d52aa146aed" alt="Podcast Studio" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="podcast studio" />
+                                    <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/EQUIPE%2001.PNG?alt=media&token=5ff731bf-e316-4f7d-88ba-e5243949b053" alt="Podcast Studio" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="podcast studio" />
                                 </CarouselItem>
                                 <CarouselItem>
                                     <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%2014.png?alt=media&token=371424d1-4fde-4a10-b8f8-d940fbb31b55" alt="Marketing Digital" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="digital marketing" />
