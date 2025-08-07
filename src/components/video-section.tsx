@@ -10,12 +10,12 @@ export default function VideoSection() {
                 <div className="mt-8 md:mt-12 mx-auto max-w-4xl">
                     <div className="relative aspect-video bg-black rounded-lg overflow-hidden">
                         <video 
-                            className="absolute top-0 left-0 w-full h-full"
+                            className="absolute top-0 left-0 w-full h-full object-cover"
                             src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/video%20tour%20horizontal%202.mp4?alt=media&token=a08f758c-201f-4048-a662-e918df1d659e" 
                             title="Video tour do estúdio da CP Marketing"
                             autoPlay
                             loop
-                            muted={false}
+                            muted
                             playsInline
                         >
                             Seu navegador não suporta a tag de vídeo.
