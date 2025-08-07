@@ -6,22 +6,26 @@ const partners = [
   { 
     name: "Google Partner", 
     src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2024.png?alt=media&token=b69b6389-c975-48b8-a1c6-be675daf84ba",
-    description: "Selo de especialista em anúncios Google, garantindo as melhores estratégias para seus resultados." 
+    description: "Selo de especialista em anúncios Google, garantindo as melhores estratégias para seus resultados.",
+    glowColor: "217deg 89% 61%"
   },
   { 
     name: "Meta Business Partner", 
     src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2025.png?alt=media&token=ef966cc7-a34c-4dfb-a363-bbf56f73766e",
-    description: "Certificação oficial que comprova nossa expertise em marketing no Facebook, Instagram e WhatsApp." 
+    description: "Certificação oficial que comprova nossa expertise em marketing no Facebook, Instagram e WhatsApp.",
+    glowColor: "207deg 98% 51%"
   },
   { 
     name: "RD Station", 
     src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2026.png?alt=media&token=2ff945a5-b0b8-409b-9394-936a5bc2d25f",
-    description: "Parceria com a plataforma líder em automação de marketing na América Latina para impulsionar suas vendas."
+    description: "Parceria com a plataforma líder em automação de marketing na América Latina para impulsionar suas vendas.",
+    glowColor: "193deg 100% 50%"
   },
   { 
     name: "mLabs", 
     src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2027.png?alt=media&token=dc6d4366-d566-4cc9-aa5d-337c154b4008",
-    description: "Especialistas na gestão de redes sociais com a plataforma parceira que otimiza o seu engajamento."
+    description: "Especialistas na gestão de redes sociais com a plataforma parceira que otimiza o seu engajamento.",
+    glowColor: "15deg 100% 60%"
   },
 ];
 
@@ -40,7 +44,10 @@ export default function PartnersSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {partners.map((partner, index) => (
             <InteractiveCard key={index}>
-              <div className="card-interactive bg-white/5 border border-white/10 rounded-lg p-6 flex flex-col justify-start items-center text-center backdrop-blur-sm transition-all duration-300 hover:bg-white/10 h-full">
+              <div 
+                className="card-interactive bg-white/5 border border-white/10 rounded-lg p-6 flex flex-col justify-start items-center text-center backdrop-blur-sm transition-all duration-300 hover:bg-white/10 h-full"
+                style={{ '--glow-color': partner.glowColor } as React.CSSProperties}
+              >
                 <div className="glow"></div>
                 <div className="relative h-20 w-40 mb-4">
                   <Image
