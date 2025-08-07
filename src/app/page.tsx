@@ -6,6 +6,7 @@ import ServicesSection from '@/components/services-section';
 import ContactSection from '@/components/contact-section';
 import Footer from '@/components/footer';
 import VideoSection from '@/components/video-section';
+import BrandsSection from '@/components/brands-section';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <div id="content-after-hero">
             <VideoSection />
             <AboutSection />
+            <BrandsSection />
             <MethodSection />
             <ServicesSection />
             <ContactSection />
