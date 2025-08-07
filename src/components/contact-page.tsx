@@ -12,7 +12,7 @@ export default function ContactPage() {
                     </h2>
                 </div>
                 <div className="grid lg:grid-cols-5 gap-12 items-start">
-                    <div className="flex flex-col justify-start items-center space-y-6 lg:col-span-2 h-full">
+                    <div className="flex flex-col justify-start items-center space-y-6 lg:col-span-2 h-full order-last lg:order-first">
                         <div className="space-y-4 text-left w-full">
                             <h1 className="text-3xl font-bold text-primary">Consultoria Gratuita</h1>
                             <p className="text-xl font-semibold text-white">Destrave o Potencial do seu Negócio Agora.</p>
