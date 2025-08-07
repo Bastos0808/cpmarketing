@@ -30,8 +30,8 @@ export default function MethodSection() {
                         <Image 
                             src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/FOTO%20CAIO.webp?alt=media&token=6136e8ef-83aa-44fd-b653-54c246663785" 
                             alt="Caio, especialista em marketing da CP Marketing"
-                            width={500}
-                            height={500}
+                            width={400}
+                            height={400}
                             className="rounded-lg"
                             data-ai-hint="man portrait"
                         />
