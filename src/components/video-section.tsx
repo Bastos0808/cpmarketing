@@ -8,16 +8,17 @@ export default function VideoSection() {
                     <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl">Conheça-nos</h2>
                 </div>
                 <div className="mt-8 md:mt-12 mx-auto max-w-4xl">
-                    <div className="aspect-video bg-secondary rounded-lg overflow-hidden">
+                    <div className="relative aspect-video bg-secondary rounded-lg overflow-hidden">
                         <iframe 
                             width="100%" 
                             height="100%" 
-                            src="https://www.youtube.com/embed/QmWmDr5OKyM?autoplay=1&mute=1&loop=1&playlist=QmWmDr5OKyM&vq=hd720&controls=0" 
+                            src="https://www.youtube.com/embed/Exca6yP9uzY?autoplay=1&mute=0&loop=1&playlist=Exca6yP9uzY&vq=hd720&controls=0" 
                             title="YouTube video player" 
                             frameBorder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             allowFullScreen>
                         </iframe>
+                        <div className="absolute inset-0 w-full h-full"></div>
                     </div>
                 </div>
             </div>
