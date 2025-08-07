@@ -66,14 +66,14 @@ export default function ContactSection() {
         </div>
         <div className="mt-12 md:mt-16">
            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!m12!1m3!1d3821.3553139929386!2d-49.2824598248502!3d-16.709113984066967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef187c5af97ff%3A0xb9e135695502383b!2sCP%20Marketing%20Digital%20e%20Podcast!5e0!3m2!1spt-BR!2sbr!4v1754332215763!5m2!1spt-BR!2sbr" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122283.38049149806!2d-49.36228667876212!3d-16.70909768293259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef187c5af97ff%3A0xb9e135695502383b!2sCP%20Marketing%20Digital%20e%20Podcast!5e0!3m2!1spt-BR!2sbr!4v1754591039287!5m2!1spt-BR!2sbr" 
                 width="100%" 
-                height="300"
+                height="450" 
                 style={{border:0}} 
                 allowFullScreen={true} 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                className="rounded-lg md:h-[400px]">
+                className="rounded-lg w-full">
             </iframe>
         </div>
       </div>
