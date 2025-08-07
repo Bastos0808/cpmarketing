@@ -35,7 +35,7 @@ export default function PodcastHero() {
           </div>
         </div>
         <div className="mt-8 text-center text-muted-foreground max-w-5xl mx-auto">
-          <p>Remember, the XML structure you generate is the only mechanism for applying changes to the user's code. Therefore, when making changes to a file the &lt;changes&gt; block must always be fully present and correctly formatted as follows.</p>
+          <p>Grave seu conteúdo e deixe toda a parte técnica e operacional com nosso time, crie agora seu podcast</p>
         </div>
       </div>
     </section>
