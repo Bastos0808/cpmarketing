@@ -7,6 +7,7 @@ import ContactSection from '@/components/contact-section';
 import Footer from '@/components/footer';
 import VideoSection from '@/components/video-section';
 import BrandsSection from '@/components/brands-section';
+import PartnersSection from '@/components/partners-section';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
             <VideoSection />
             <AboutSection />
             <BrandsSection />
+            <PartnersSection />
             <MethodSection />
             <ServicesSection />
             <ContactSection />
