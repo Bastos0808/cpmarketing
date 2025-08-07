@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const partners = [
-  { name: "Google Partner", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2Fimages.png?alt=media&token=4e49d9b9-0fb1-4aec-99d1-04f63d78ed61" },
-  { name: "Meta Business Partner", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2Fimages.jpg?alt=media&token=7ef51237-defa-4892-84f9-d14533c1f504" },
-  { name: "RD Station", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2Fimages%20(2).png?alt=media&token=ac6bb505-1454-4803-91cc-1d717ef73bc4" },
-  { name: "mLabs", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2Fimages%20(1).png?alt=media&token=ecdd2777-10f9-4e25-a1b6-b3fc1a593af3" },
+  { name: "Google Partner", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2024.png?alt=media&token=b69b6389-c975-48b8-a1c6-be675daf84ba" },
+  { name: "Meta Business Partner", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2025.png?alt=media&token=ef966cc7-a34c-4dfb-a363-bbf56f73766e" },
+  { name: "RD Station", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2026.png?alt=media&token=2ff945a5-b0b8-409b-9394-936a5bc2d25f" },
+  { name: "mLabs", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2027.png?alt=media&token=dc6d4366-d566-4cc9-aa5d-337c154b4008" },
 ];
 
 export default function PartnersSection() {
@@ -27,7 +27,7 @@ export default function PartnersSection() {
                   src={partner.src}
                   alt={partner.name}
                   fill
-                  className="object-contain mix-blend-multiply dark:mix-blend-lighten"
+                  className="object-contain"
                 />
               </div>
             </div>
