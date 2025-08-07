@@ -2,8 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 
 const brands = [
   { name: "Cliente 1", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2Flogo_200x200.png?alt=media&token=6f336712-7bc6-4e5a-a2ea-b625e4cd4a03" },
@@ -15,11 +13,9 @@ const brands = [
   { name: "Cliente 7", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FLOGO-SEM-FUNDO.png_200x200.webp?alt=media&token=e3f4fe74-7df7-4002-8da4-b6b70b26ae73" },
 ];
 
-export default function BrandsSection() {
-    const plugin = React.useRef(
-        Autoplay({ delay: 1500, stopOnInteraction: false, stopOnMouseEnter: true })
-    );
+const duplicatedBrands = [...brands, ...brands];
 
+export default function BrandsSection() {
   return (
     <section id="brands" className="py-12 md:py-24 lg:py-32 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
@@ -31,29 +27,22 @@ export default function BrandsSection() {
             Temos orgulho de ter colaborado com empresas de diversos setores, ajudando-as a alcançar seus objetivos.
           </p>
         </div>
-        <Carousel
-            plugins={[plugin.current]}
-            className="w-full"
-            opts={{
-                align: "start",
-                loop: true,
-            }}
-        >
-            <CarouselContent className="-ml-4">
-                 {brands.map((brand, index) => (
-                    <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/5 pl-4">
-                        <div className="relative h-32 filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100 transition-all duration-300">
-                          <Image
-                            src={brand.src}
-                            alt={brand.name}
-                            fill
-                            className="object-contain"
-                          />
-                        </div>
-                    </CarouselItem>
-                ))}
-            </CarouselContent>
-        </Carousel>
+        <div className="marquee-container">
+          <div className="marquee">
+            {duplicatedBrands.map((brand, index) => (
+              <div key={index} className="flex-shrink-0 mx-8">
+                <div className="relative h-32 w-48">
+                  <Image
+                    src={brand.src}
+                    alt={brand.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
