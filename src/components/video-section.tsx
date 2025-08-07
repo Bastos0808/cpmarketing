@@ -13,10 +13,9 @@ export default function VideoSection() {
                             className="absolute top-0 left-0 w-full h-full"
                             src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/video%20tour%20horizontal%202.mp4?alt=media&token=a08f758c-201f-4048-a662-e918df1d659e" 
                             title="Video tour do estúdio da CP Marketing"
-                            controls
                             autoPlay
                             loop
-                            muted
+                            muted={false}
                             playsInline
                         >
                             Seu navegador não suporta a tag de vídeo.
