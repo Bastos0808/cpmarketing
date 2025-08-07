@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const brands = [
-  { name: "Agenday", src: "/AGENDAY.svg" },
+  { name: "Agenday", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FAGENDAY%202.svg?alt=media&token=c1e11da9-7594-49c8-a469-9082bc97a65b" },
   { name: "Asgard", src: "/ASGARD.svg" },
   { name: "Bruxelas", src: "/BRUXELAS.svg" },
   { name: "Clinica de Finaças", src: "/CLINICA DE FINAÇAS.svg" },
