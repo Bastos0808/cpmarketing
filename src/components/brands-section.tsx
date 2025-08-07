@@ -16,6 +16,7 @@ const brands = [
   { name: "Kaiza Marra", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FMarca_D'agua_Kaiza_Marra_Saude_e_Bem_estar_04.png?alt=media&token=8085002b-ffa4-4bc3-828c-5f6fcc10aabf" },
   { name: "Cliente 11", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2Fpost.png?alt=media&token=48011c9e-6326-4350-82a6-128421c442c1" },
   { name: "Cliente 12", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2Fpreto%20png.png?alt=media&token=1a52ecfa-c57b-4cc2-9d5f-f3a7bc0023c3" },
+  { name: "Cliente 13", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FDesign%20sem%20nome%20(2).png?alt=media&token=52bfb9f8-dc85-4ec4-8b1d-d57204f504fe" },
 ];
 
 const duplicatedBrands = [...brands, ...brands];
