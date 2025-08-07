@@ -5,6 +5,11 @@ export default function ContactPage() {
         <section className="w-full py-12 md:py-24 lg:py-32 bg-background relative">
             <div className="absolute inset-0 bg-grid-orange-900/10 [mask-image:linear-gradient(to_bottom,white_5%,transparent_50%)]"></div>
             <div className="container mx-auto px-4 md:px-6 relative z-10">
+                <div className="text-center mb-12">
+                    <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl text-primary font-headline">
+                        Seu marketing está dando prejuízo? Nós apontamos a causa e a solução
+                    </h2>
+                </div>
                 <div className="grid lg:grid-cols-5 gap-12">
                     <div className="flex flex-col justify-start space-y-6 lg:col-span-2 h-full">
                         <div className="space-y-4">
