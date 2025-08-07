@@ -6,7 +6,7 @@ export default function Contato() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
-      <main className="flex-grow pt-28">
+      <main className="flex-grow pt-20">
         <ContactPage />
       </main>
       <Footer />
