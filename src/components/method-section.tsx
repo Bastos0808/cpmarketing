@@ -26,6 +26,16 @@ export default function MethodSection() {
                     <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">Conheça nosso método</h2>
                  </div>
                  <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div className="flex justify-center">
+                        <Image 
+                            src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/FOTO%20CAIO.webp?alt=media&token=6136e8ef-83aa-44fd-b653-54c246663785" 
+                            alt="Caio, especialista em marketing da CP Marketing"
+                            width={500}
+                            height={500}
+                            className="rounded-lg"
+                            data-ai-hint="man portrait"
+                        />
+                    </div>
                     <div className="space-y-4">
                         {methods.map((method, index) => (
                             <div key={index} className="border border-border rounded-lg p-4 md:p-6">
@@ -44,16 +54,6 @@ export default function MethodSection() {
                                 </Link>
                              </Button>
                          </div>
-                    </div>
-                    <div className="flex justify-center">
-                        <Image 
-                            src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/FOTO%20CAIO.png?alt=media&token=48c783ce-56d1-4207-a36c-9c7efd75ac45" 
-                            alt="Caio, especialista em marketing da CP Marketing"
-                            width={500}
-                            height={500}
-                            className="rounded-lg"
-                            data-ai-hint="man portrait"
-                        />
                     </div>
                  </div>
             </div>
