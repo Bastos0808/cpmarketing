@@ -1,10 +1,26 @@
 import Image from "next/image";
 
 const partners = [
-  { name: "Google Partner", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2024.png?alt=media&token=b69b6389-c975-48b8-a1c6-be675daf84ba" },
-  { name: "Meta Business Partner", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2025.png?alt=media&token=ef966cc7-a34c-4dfb-a363-bbf56f73766e" },
-  { name: "RD Station", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2026.png?alt=media&token=2ff945a5-b0b8-409b-9394-936a5bc2d25f" },
-  { name: "mLabs", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2027.png?alt=media&token=dc6d4366-d566-4cc9-aa5d-337c154b4008" },
+  { 
+    name: "Google Partner", 
+    src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2024.png?alt=media&token=b69b6389-c975-48b8-a1c6-be675daf84ba",
+    description: "Selo de especialista em anúncios Google, garantindo as melhores estratégias para seus resultados." 
+  },
+  { 
+    name: "Meta Business Partner", 
+    src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2025.png?alt=media&token=ef966cc7-a34c-4dfb-a363-bbf56f73766e",
+    description: "Certificação oficial que comprova nossa expertise em marketing no Facebook, Instagram e WhatsApp." 
+  },
+  { 
+    name: "RD Station", 
+    src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2026.png?alt=media&token=2ff945a5-b0b8-409b-9394-936a5bc2d25f",
+    description: "Parceria com a plataforma líder em automação de marketing na América Latina para impulsionar suas vendas."
+  },
+  { 
+    name: "mLabs", 
+    src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2027.png?alt=media&token=dc6d4366-d566-4cc9-aa5d-337c154b4008",
+    description: "Especialistas na gestão de redes sociais com a plataforma parceira que otimiza o seu engajamento."
+  },
 ];
 
 export default function PartnersSection() {
@@ -19,10 +35,10 @@ export default function PartnersSection() {
             Trabalhamos com as melhores ferramentas e plataformas do mercado para entregar resultados de excelência.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {partners.map((partner, index) => (
-            <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-6 flex justify-center items-center backdrop-blur-sm transition-all duration-300 hover:bg-white/10">
-              <div className="relative h-20 w-40">
+            <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-6 flex flex-col justify-start items-center text-center backdrop-blur-sm transition-all duration-300 hover:bg-white/10 h-full">
+              <div className="relative h-20 w-40 mb-4">
                 <Image
                   src={partner.src}
                   alt={partner.name}
@@ -30,6 +46,8 @@ export default function PartnersSection() {
                   className="object-contain filter brightness-0 invert"
                 />
               </div>
+              <h3 className="font-semibold text-primary-foreground mb-2">{partner.name}</h3>
+              <p className="text-muted-foreground text-sm flex-grow">{partner.description}</p>
             </div>
           ))}
         </div>
