@@ -2,7 +2,6 @@
 
 import React from "react";
 import PodcastGuestRdstationForm from "./podcast-guest-rdstation-form";
-import { Badge } from "./ui/badge";
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
@@ -19,7 +18,9 @@ export default function PodcastGuestPage() {
                 <div className="grid lg:grid-cols-2 gap-12 items-stretch">
                     <div className="flex flex-col space-y-8">
                         <div className="space-y-6">
-                            <Badge variant="outline" className="w-fit border-primary text-primary">PARTICIPAÇÃO GRATUITA</Badge>
+                             <div className="inline-block px-6 py-2 text-lg font-bold uppercase tracking-wider text-primary-foreground bg-primary rounded-full shadow-[0_0_15px_hsl(var(--primary))] animate-pulse">
+                                PARTICIPAÇÃO GRATUITA
+                            </div>
                             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
                                 Torne-se uma Autoridade no seu Mercado: Participe do Nosso Podcast
                             </h1>
