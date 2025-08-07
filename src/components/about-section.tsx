@@ -14,13 +14,7 @@ export default function AboutSection() {
         <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
-                    <div className="relative flex items-center justify-center max-w-[300px] mx-auto">
-                        <div className="absolute w-full h-full hidden md:block">
-                            <div className="absolute inset-0 border-2 border-primary/50 rounded-full animate-spin-slow"></div>
-                            <div className="absolute inset-[8%] border-2 border-primary/50 rounded-full animate-spin-slow-reverse"></div>
-                            <div className="absolute top-[15%] right-[5%] w-2 h-2 bg-primary transform rotate-45"></div>
-                            <div className="absolute bottom-[15%] left-[5%] w-2 h-2 bg-primary transform rotate-45"></div>
-                        </div>
+                    <div className="relative flex items-center justify-center max-w-lg mx-auto">
                         <Carousel
                             plugins={[plugin.current]}
                             className="w-full"
@@ -30,10 +24,10 @@ export default function AboutSection() {
                         >
                             <CarouselContent>
                                 <CarouselItem>
-                                    <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/EQUIPE%2001.PNG?alt=media&token=5ff731bf-e316-4f7d-88ba-e5243949b053" alt="Equipe CP Marketing 1" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="marketing team" />
+                                    <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/EQUIPE%2001.PNG?alt=media&token=5ff731bf-e316-4f7d-88ba-e5243949b053" alt="Equipe CP Marketing 1" width={500} height={300} className="rounded-lg relative z-10 object-cover aspect-video" data-ai-hint="marketing team" />
                                 </CarouselItem>
                                 <CarouselItem>
-                                    <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%2023%20(1).png?alt=media&token=5da5cc06-af5d-4789-9d5a-439ffc91dedf" alt="Equipe CP Marketing 2" width={300} height={500} className="rounded-lg relative z-10 object-cover aspect-[3/5]" data-ai-hint="marketing team" />
+                                    <Image src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/Prancheta%2023%20(1).png?alt=media&token=5da5cc06-af5d-4789-9d5a-439ffc91dedf" alt="Equipe CP Marketing 2" width={500} height={300} className="rounded-lg relative z-10 object-cover aspect-video" data-ai-hint="marketing team" />
                                 </CarouselItem>
                             </CarouselContent>
                         </Carousel>
