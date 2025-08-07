@@ -7,7 +7,7 @@ const partners = [
     name: "Google Partner", 
     src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/PARCEIROS%2FPrancheta%2024.png?alt=media&token=b69b6389-c975-48b8-a1c6-be675daf84ba",
     description: "Selo de especialista em anúncios Google, garantindo as melhores estratégias para seus resultados.",
-    glowColor: "217deg 89% 61%"
+    glowColor: "45deg 100% 50%"
   },
   { 
     name: "Meta Business Partner", 
