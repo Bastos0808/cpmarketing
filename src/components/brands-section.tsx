@@ -21,10 +21,10 @@ export default function BrandsSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-primary-foreground">
-            Marcas que Confiam na Gente
+            Junte-se às +203 Marcas que Confiam na Nossa Expertise
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-muted-foreground md:text-xl/relaxed">
-            Temos orgulho de ter colaborado com empresas de diversos setores, ajudando-as a alcançar seus objetivos.
+            Com mais de 203 projetos de sucesso, transformamos negócios em líderes de mercado. Veja algumas das marcas que decolaram com a gente e prepare-se para ser a próxima.
           </p>
         </div>
         <div className="marquee-container">
