@@ -22,7 +22,7 @@ export default function PartnersSection() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
           {partners.map((partner, index) => (
             <div key={index} className="flex justify-center">
-              <div className="relative h-20 w-40 filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100 transition-all duration-300">
+              <div className="relative h-20 w-40 transition-all duration-300">
                 <Image
                   src={partner.src}
                   alt={partner.name}
