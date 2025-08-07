@@ -25,6 +25,7 @@ const brands = [
   { name: "Cliente 19", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FDesign%20sem%20nome%20(8).png?alt=media&token=b70bc13f-1e04-4199-87d6-632abe52d821" },
   { name: "Cliente 20", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FPrancheta%201.png?alt=media&token=5c2778f1-4260-46b2-b892-869893cc6f2d" },
   { name: "Astego", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2FNOVA-LOGO-ASEGO-2%20-%20Astego%20Astego.png?alt=media&token=7292c9e6-c6a9-41dc-8b0b-e44792e6c33c" },
+  { name: "Cliente 22", src: "https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/CLIENTES%2Fmarca%20d%C2%B4agua%20toda%20clara.png?alt=media&token=e22a5d31-7b11-440d-82a4-7d877e8a6690" },
 ];
 
 const duplicatedBrands = [...brands, ...brands];
