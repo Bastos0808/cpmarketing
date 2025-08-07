@@ -42,7 +42,7 @@ export default function BrandsSection() {
             <CarouselContent className="-ml-4">
                  {brands.map((brand, index) => (
                     <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/5 pl-4">
-                        <div className="relative h-20 filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100 transition-all duration-300">
+                        <div className="relative h-32 filter grayscale hover:grayscale-0 brightness-200 hover:brightness-100 transition-all duration-300">
                           <Image
                             src={brand.src}
                             alt={brand.name}
