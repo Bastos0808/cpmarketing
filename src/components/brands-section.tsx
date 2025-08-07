@@ -29,9 +29,10 @@ const initialBrands = [
 ];
 
 export default function BrandsSection() {
-  const [shuffledBrands, setShuffledBrands] = useState<(typeof initialBrands)>([]);
+  const [brands, setBrands] = useState<(typeof initialBrands)>([]);
 
   useEffect(() => {
+    // Client-side only shuffling
     const shuffleArray = (array: typeof initialBrands) => {
       const newArray = [...array];
       for (let i = newArray.length - 1; i > 0; i--) {
@@ -40,10 +41,10 @@ export default function BrandsSection() {
       }
       return newArray;
     };
-    setShuffledBrands(shuffleArray(initialBrands));
+    setBrands(shuffleArray(initialBrands));
   }, []);
 
-  const duplicatedBrands = [...shuffledBrands, ...shuffledBrands];
+  const duplicatedBrands = brands.length > 0 ? [...brands, ...brands] : [];
 
   return (
     <section id="brands" className="py-12 md:py-24 lg:py-32 bg-secondary">
