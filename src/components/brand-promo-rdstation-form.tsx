@@ -12,8 +12,7 @@ const BrandPromoRdstationForm = () => {
 
     const formDiv = document.createElement('div');
     formDiv.setAttribute('role', 'main');
-    // ATENÇÃO: Substitua pelo ID correto do seu novo formulário do RD Station
-    formDiv.id = 'coloque-o-id-do-seu-formulario-aqui'; 
+    formDiv.id = 'form-divulgacao-de-marca-podcast-site-cp-167ae5022943dcaeca44'; 
     formContainer.appendChild(formDiv);
 
     const scriptUrl = 'https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js';
@@ -21,8 +20,7 @@ const BrandPromoRdstationForm = () => {
 
     const initializeForm = () => {
         if (window.RDStationForms) {
-            // ATENÇÃO: Substitua pelo ID correto do seu novo formulário do RD Station
-            new window.RDStationForms('coloque-o-id-do-seu-formulario-aqui', 'null').createForm();
+            new window.RDStationForms('form-divulgacao-de-marca-podcast-site-cp-167ae5022943dcaeca44', 'null').createForm();
         }
     };
 
