@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -8,6 +8,24 @@ export default function PodcastHero() {
   const [isVideoVisible, setIsVideoVisible] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isMuted, setIsMuted] = useState(true);
+  const [showFirstPart, setShowFirstPart] = useState(false);
+  const [showSecondPart, setShowSecondPart] = useState(false);
+
+  useEffect(() => {
+    const timer1 = setTimeout(() => {
+      setShowFirstPart(true);
+    }, 500);
+
+    const timer2 = setTimeout(() => {
+      setShowSecondPart(true);
+    }, 1500);
+
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
+  }, []);
+
 
   const toggleMute = () => {
     if (videoRef.current) {
@@ -27,10 +45,15 @@ export default function PodcastHero() {
         <div className="mt-8 md:mt-12 mx-auto max-w-5xl">
           <div className="relative aspect-video rounded-2xl overflow-hidden border border-primary bg-black flex items-center justify-center">
             {!isVideoVisible && (
-              <div className="absolute inset-0 flex items-center justify-center bg-black z-20 p-4">
-                <p className="text-white text-xl md:text-2xl font-bold animate-pulse text-center">
-                  SE PREPARE PARA CONHECER O ESTÚDIO MAIS LINDO
-                </p>
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black z-20 p-4 transition-opacity duration-500">
+                <div className="text-center">
+                    <p className={`text-white text-xl md:text-2xl font-bold transition-opacity duration-1000 ${showFirstPart ? 'opacity-100' : 'opacity-0'}`}>
+                        SE PREPARE
+                    </p>
+                    <p className={`text-primary text-xl md:text-2xl font-bold transition-opacity duration-1000 delay-500 ${showSecondPart ? 'opacity-100' : 'opacity-0'}`}>
+                        PARA CONHECER O ESTÚDIO MAIS COMPLETO DE GOIÂNIA
+                    </p>
+                </div>
               </div>
             )}
             <video
@@ -41,7 +64,7 @@ export default function PodcastHero() {
               playsInline
               className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${isVideoVisible ? "opacity-100" : "opacity-0"}`}
               onCanPlay={() => setIsVideoVisible(true)}
-              preload="metadata"
+              preload="auto"
             >
               <source src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/video-do-estudio.mp4?alt=media&token=3291830a-49be-4c27-b25b-25cefdd6ad80" type="video/mp4" />
               Seu navegador não suporta a tag de vídeo.
