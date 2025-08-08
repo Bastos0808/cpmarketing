@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Calendar, Mic, Youtube, Globe, MapPin, Podcast } from "lucide-react";
+import { Calendar, Mic, Youtube, Globe, MapPin, Cpu } from "lucide-react";
 import WarpSpeedBackground from "./warp-speed-background";
 import { useSearchParams } from 'next/navigation';
 import { useMemo } from "react";
@@ -37,6 +37,11 @@ export default function LinksPage() {
             href: `/podcast?${params}`,
             text: "Locação de Estúdio de Podcast",
             icon: <Mic className="h-5 w-5" />,
+        },
+        {
+            href: `https://agencia.cpmarketingbr.com.br/acesso-ferramentas?${params}`,
+            text: "Nossas Ferramentas de IA",
+            icon: <Cpu className="h-5 w-5" />,
         },
         {
             href: "https://www.youtube.com/@cpmarketingbr",
