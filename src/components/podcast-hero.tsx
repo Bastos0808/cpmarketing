@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useRef } from "react";
-import { Loader, Volume2, VolumeX } from "lucide-react";
+import { Volume2, VolumeX } from "lucide-react";
 import { Button } from "./ui/button";
 
 export default function PodcastHero() {
@@ -26,13 +26,20 @@ export default function PodcastHero() {
         </div>
         <div className="mt-8 md:mt-12 mx-auto max-w-5xl">
           <div className="relative aspect-video rounded-2xl overflow-hidden border border-primary bg-black flex items-center justify-center">
+            {!isVideoVisible && (
+              <div className="absolute inset-0 flex items-center justify-center bg-black z-20 p-4">
+                <p className="text-white text-xl md:text-2xl font-bold animate-pulse text-center">
+                  SE PREPARE PARA CONHECER O ESTÚDIO MAIS LINDO
+                </p>
+              </div>
+            )}
             <video
               ref={videoRef}
               autoPlay
               muted
               loop
               playsInline
-              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ${isVideoVisible ? "opacity-100" : "opacity-0"}`}
+              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${isVideoVisible ? "opacity-100" : "opacity-0"}`}
               onCanPlay={() => setIsVideoVisible(true)}
               preload="metadata"
             >
