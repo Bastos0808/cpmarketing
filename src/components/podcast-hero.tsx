@@ -5,7 +5,7 @@ import { Loader, Volume2, VolumeX } from "lucide-react";
 import { Button } from "./ui/button";
 
 export default function PodcastHero() {
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const [isVideoVisible, setIsVideoVisible] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isMuted, setIsMuted] = useState(true);
 
@@ -26,19 +26,15 @@ export default function PodcastHero() {
         </div>
         <div className="mt-8 md:mt-12 mx-auto max-w-5xl">
           <div className="relative aspect-video rounded-2xl overflow-hidden border border-primary bg-black flex items-center justify-center">
-            {!isVideoLoaded && (
-              <div className="absolute inset-0 flex items-center justify-center z-10">
-                <Loader className="h-12 w-12 text-primary animate-spin" />
-              </div>
-            )}
             <video
               ref={videoRef}
               autoPlay
               muted
               loop
               playsInline
-              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ${isVideoLoaded ? "opacity-100" : "opacity-0"}`}
-              onCanPlay={() => setIsVideoLoaded(true)}
+              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ${isVideoVisible ? "opacity-100" : "opacity-0"}`}
+              onCanPlay={() => setIsVideoVisible(true)}
+              preload="metadata"
             >
               <source src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/video-do-estudio.mp4?alt=media&token=3291830a-49be-4c27-b25b-25cefdd6ad80" type="video/mp4" />
               Seu navegador não suporta a tag de vídeo.
