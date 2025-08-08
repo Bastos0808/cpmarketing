@@ -17,7 +17,7 @@ export default function BrandPromoPage() {
                                 DIVULGAÇÃO GRATUITA
                             </div>
                             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
-                                Exiba sua Marca em Nosso Podcast para Nossa Audiência
+                                Exiba sua Marca Gratuitamente em Nosso Podcast para Nossa Audiência
                             </h1>
                             <p className="max-w-[600px] text-gray-300 md:text-lg text-sm">
                                 Quer aumentar a visibilidade da sua empresa e fortalecer seu branding? Oferecemos uma oportunidade única: divulgue sua marca gratuitamente em nosso estúdio de podcast.
