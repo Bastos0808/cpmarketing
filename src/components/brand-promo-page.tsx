@@ -45,10 +45,18 @@ export default function BrandPromoPage() {
                                     </div>
                                </div>
                             </div>
-                             <p className="font-bold text-primary text-lg pt-4">
-                               Preencha o formulário abaixo para garantir o espaço da sua marca. As vagas são limitadas!
-                            </p>
                         </div>
+                         <Image 
+                            src="/PODCAST 01.png"
+                            alt="Estúdio de Podcast com TV para divulgação de marcas"
+                            width={500}
+                            height={300}
+                            className="rounded-lg object-cover w-full aspect-video"
+                            data-ai-hint="podcast studio television"
+                        />
+                         <p className="font-bold text-primary text-lg pt-4 text-center lg:text-left">
+                           Preencha o formulário abaixo para garantir o espaço da sua marca. As vagas são limitadas!
+                        </p>
                     </div>
                     <div className="w-full h-full bg-secondary/50 border border-border rounded-lg flex items-center justify-center p-4">
                         <BrandPromoRdstationForm />
