@@ -1,10 +1,20 @@
 "use client"
 
-import { useState } from "react";
-import { Loader } from "lucide-react";
+import { useState, useRef } from "react";
+import { Loader, Volume2, VolumeX } from "lucide-react";
+import { Button } from "./ui/button";
 
 export default function PodcastHero() {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isMuted, setIsMuted] = useState(true);
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(videoRef.current.muted);
+    }
+  };
 
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-background relative">
@@ -22,6 +32,7 @@ export default function PodcastHero() {
               </div>
             )}
             <video
+              ref={videoRef}
               autoPlay
               muted
               loop
@@ -32,6 +43,12 @@ export default function PodcastHero() {
               <source src="https://firebasestorage.googleapis.com/v0/b/site-cp-marketing.firebasestorage.app/o/video-do-estudio.mp4?alt=media&token=3291830a-49be-4c27-b25b-25cefdd6ad80" type="video/mp4" />
               Seu navegador não suporta a tag de vídeo.
             </video>
+            <div className="absolute bottom-4 right-4 z-10">
+                <Button onClick={toggleMute} size="icon" variant="outline" className="bg-black/50 hover:bg-black/70 border-white/30 hover:border-white text-white">
+                    {isMuted ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
+                    <span className="sr-only">Toggle Sound</span>
+                </Button>
+            </div>
           </div>
         </div>
         <div className="mt-8 text-center max-w-5xl mx-auto">
