@@ -26,6 +26,21 @@ export default function LinksPage() {
         return newParams.toString();
     }, [searchParams]);
 
+    const spotifyLink = useMemo(() => {
+        const baseUrl = "https://open.spotify.com/show/1s3MujdLmes7L3FNslAEYR";
+        const url = new URL(baseUrl);
+        const existingParams = new URLSearchParams(searchParams);
+        existingParams.forEach((value, key) => {
+            if (!key.startsWith('si')) { // Keep original si param if it exists, but we'll add our own from the new link
+                 url.searchParams.set(key, value);
+            }
+        });
+        url.searchParams.set('si', '1gCgqPL9RYqsa1SaWTL4HA'); // from new link
+        url.searchParams.set('utm_source', 'instagram');
+        url.searchParams.set('utm_medium', 'bio');
+        return url.toString();
+    }, [searchParams]);
+
 
     const links = useMemo(() => [
         {
@@ -49,7 +64,7 @@ export default function LinksPage() {
             icon: <Youtube className="h-5 w-5" />,
         },
         {
-            href: "https://open.spotify.com/show/5oPjV1XqY1aJ1eF9kH2I5f",
+            href: spotifyLink,
             text: "Spotify Podcast",
             icon: <SpotifyIcon />,
         },
@@ -63,7 +78,7 @@ export default function LinksPage() {
             text: "Nossa Localização",
             icon: <MapPin className="h-5 w-5" />,
         },
-    ], [params]);
+    ], [params, spotifyLink]);
 
     return (
         <div className="relative flex flex-col items-center justify-center min-h-screen text-foreground p-4 overflow-hidden">
